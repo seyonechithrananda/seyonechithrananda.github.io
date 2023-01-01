@@ -131,9 +131,9 @@ layout: default
                 <img class="project-img" src="/assets/images/screen.jpg" alt="alt" title="title">
               </td>
               <td class="project-info">
-                <span class="project-title">Towards a free-living chloroplast</span>
+                <span class="project-title">A Benchmark Framework for Evaluating Structure-to-Sequence Models for Protein Design</span>
                 <br>
-                <highlight>Seyone Chithrananda</highlight>
+                Jeffrey Chan, <highlight>Seyone Chithrananda</highlight>, David Brookes, Sam Sinai
                 <br>
                 <input type="checkbox" id="trigger3">
                 [<label for="trigger3"><a id="fakelink">abstract</a></label>]
@@ -153,18 +153,20 @@ layout: default
             <!-- pub -->
             <tr>
               <td class="project-media">
-                <img class="project-img" src="/assets/images/catastrophe.jpg" alt="catastrophe" title="things fall apart">
+                <img class="project-img" src="/assets/images/gb1.jpeg" alt="gb1" title="gb1 design region">
               </td>
               <td class="project-info">
-                <span class="project-title">Modeling Microtubule Catastrophe</span>
+                <span class="project-title">A Benchmark Framework for Evaluating Structure-to-Sequence Models for Protein Design</span>
                 <br>
-                <highlight>Kian Faizi</highlight>, David Jin, <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=44KjzP0AAAAJ" target="_blank" rel="noreferrer noopener">James Mullahoo</a>, Ziyan Wu
+                Jeffrey Chan, <highlight>Seyone Chithrananda</highlight>, David Brookes, Sam Sinai
                 <br>
-                [<a href="https://www.kianfaizi.com/catastrophe/index.html" target="_blank" rel="noreferrer noopener">website</a>] /
-                [<a href="https://github.com/kfaizi/catastrophe" title="catastrophe on GitHub" target="_blank" rel="noreferrer noopener">code</a>]
+                <i>NeurIPS ML for Structural Biology Workshop</i> (2022)
+                <br>
+                [<a href="https://recorder-v3.slideslive.com/?share=77740&s=6750961a-3f91-459a-9a77-e58ddf5d31aa" target="_blank" rel="noreferrer noopener">Presentation</a>] /
+                [<a href="https://nips.cc/media/PosterPDFs/NeurIPS%202022/59042.png?t=1669918914.4617863" title="NeurIPS Poster" target="_blank" rel="noreferrer noopener">Poster</a>]
                 <p></p>
                 <p>
-                  I built a website showcasing my team's analysis of the dynamics of microtubule growth, based on <a href="https://gchure.github.io" target="_blank" rel="noreferrer noopener">Griffin Chure's</a> template for reproducible research. Class project for <a href="https://bebi103a.github.io" target="_blank" rel="noreferrer noopener">BE/Bi 103a</a>.
+                  Preprint public soon. I built a benchmark for evaluating autoregressive structure-based protein design models (ESM-IF1, ProteinMPNN) on protein design using the GB1 dataset, by evaluating the log-hlikelioods and joint sampling probabilities on highly epistastic regions of the protein. Alongside Jeffrey and David, I developed a model distillation approach for improving the generative capabilities of ESM.
                 </p>
               </td>
             </tr>
