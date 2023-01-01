@@ -112,6 +112,7 @@ layout: default
               <td>
                 <p>
                   Presently, I'm interested in the intersection of machine learning for single-cell genomics & protein biology.
+                </p>
                 <p>
                    I'm a visiting undergrad researcher at the Broad Institute, advised by Eric Lander and Eeshit Dhaival Vashnav. This past summer, I was an research intern at <a href="https://www.dynotx.com" target="_blank" rel="noreferrer noopener">Dyno Therapeutics</a>, working on machine learning for protein engineering. Previously, I worked in the laboratory of Prof. Alan Aspuru-Guzik at the University of Toronto, and hacked on open source software at DeepChem, co-creating the ChemBERTa suite of chemical language models.
                 </p>
@@ -119,9 +120,6 @@ layout: default
             </tr>
           </tbody>
         </table>
-
-        <p>
-        </p>
 
         <!-- Publications and projects -->
         <table class="index">
