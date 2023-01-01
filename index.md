@@ -25,7 +25,7 @@ layout: default
               <td style="width:63%;vertical-align:middle;">
                 <p style="text-align:center">
                   <h1 style="text-align: center;">
-                    <span class="tooltip">Kian Faizi<span class="tooltip-text">/kiɑn fɑɪzi/</span></span>
+                    <span class="tooltip">Seyone Chithrananda<span class="tooltip-text">/say-on/</span></span>
                   </h1>
                 </p>
               </td>
@@ -35,17 +35,14 @@ layout: default
             <tr style="padding:0px">
               <td style="width:63%;vertical-align:top">
                 <p>
-                  Hi, I'm Kian! I'm interested in how life works — and how we can engineer it to make the world a better place.
+                  Hi, I'm Seyone, an undergrad student at Berkeley studying computer science & bioengineering. I'm interested in using computation as a mechanicsm for how biology works — and how we can engineer it to improve human health. My research goal is to build computational tools for the design, engineering & interpretation of biological systems.
                 </p>                  
                 <p>
-                  I'm a PhD student at Caltech in the systems biology program. This summer, I was on sabbatical at Harvard as an inaugural <a href="https://www.newscience.org" target="_blank" rel="noreferrer noopener">New Science</a> summer fellow.
-                </p>
-                <p>
-                  <highlight>If it sounds like our interests align, <a href="mailto:kian@caltech.edu">say hi</a>!</highlight> I'm always excited to talk science with new people. You can also find me on <a href="https://www.twitter.com/kianfaizi/" target="_blank" rel="noreferrer noopener">Twitter</a> and <a href="https://www.github.com/kfaizi/" target="_blank" rel="noreferrer noopener">GitHub</a>.
+                  <highlight>If you'd like to chat, feel free to email me! <a href="mailto:seyonec@berkeley.edu">say hi</a>!</highlight> I'm always excited to talk all things science. You can also find me on <a href="https://twitter.com/SeyoneC" target="_blank" rel="noreferrer noopener">Twitter</a> and <a href="https://github.com/seyonechithrananda" target="_blank" rel="noreferrer noopener">GitHub</a>.
                 </p>
               </td>
               <td style="max-width:30%;vertical-align:text-top;padding-left:3%">
-                <a href="/assets/images/rainier-headshot.jpg" id="headshot"><img alt="headshot" title="it's me!" src="/assets/images/cropped-rainier-headshot.png"></a>
+                <a href="/assets/images/ny_profile.jpg" id="headshot"><img alt="headshot" title="it's me!" src="/assets/images/ny_profile.jpg"></a>
               </td>
             </tr>
           </tbody>
@@ -79,7 +76,7 @@ layout: default
             <tr>
               <td>
                 <p>
-                  <a href="/blog.html">Sometimes I write</a> about science, programming, and anything else I'm currently curious about. Check out my most recent posts below:
+                  <a href="/blog.html">I'm starting to write again about</a> science, philosophy, biotech and public policy. Posts to be added below, and check out my <a href="https://seyonec.medium.com" target="_blank" rel="noreferrer noopener">Medium</a> for older ones:
                 </p>
 
                 <ul class="posts">
@@ -114,10 +111,9 @@ layout: default
             <tr>
               <td>
                 <p>
-                  I enjoy thinking about how mathematical models and physical laws can describe (and predict!) cellular behavior. I'm fascinated by developmental plasticity and self-organization in biological systems.
-                </p>
+                  Presently, I'm interested in the intersection of machine learning for single-cell genomics & protein biology.
                 <p>
-                  I did my undergrad at UCSD studying molecular biology and math. While there, I was a tech in <a href="https://www.busch.salk.edu/" target="_blank" rel="noreferrer noopener">Dr. Wolfgang Busch's</a> plant genetics group at the Salk Institute, where I studied root-environment interactions in <i>Arabidopsis thaliana</i> using quantitative and computational methods. Before that, I worked in <a href="http://www.patrickhsulab.org/" target="_blank" rel="noreferrer noopener">Dr. Patrick Hsu's</a> lab, where I helped develop CRISPR-Cas13d for programmable RNA editing. See <a href="/assets/kian-faizi-cv.pdf">my CV</a> for more details, or read about some of my projects below:
+                   I'm a visiting undergrad researcher at the Broad Institute, advised by Eric Lander and Eeshit Dhaival Vashnav. This past summer, I was an research intern at <a href="https://www.dynotx.com" target="_blank" rel="noreferrer noopener">Dyno Therapeutics</a>, working on machine learning for protein engineering. Previously, I worked in the laboratory of Prof. Alan Aspuru-Guzik at the University of Toronto, and hacked on open source software at DeepChem, co-creating the ChemBERTa suite of chemical language models.
                 </p>
               </td>
             </tr>
@@ -139,7 +135,7 @@ layout: default
               <td class="project-info">
                 <span class="project-title">Towards a free-living chloroplast</span>
                 <br>
-                <highlight>Kian Faizi</highlight>
+                <highlight>Seyone Chithrananda</highlight>
                 <br>
                 <input type="checkbox" id="trigger3">
                 [<label for="trigger3"><a id="fakelink">abstract</a></label>]
@@ -342,7 +338,7 @@ layout: default
         <!-- Acknowledgements -->
         <h2>Acknowledgements</h2>
         <p>
-          My homepage layout is inspired by <a href="https://jonbarron.info" target="_blank" rel="noreferrer noopener">this guy</a>.
+          My homepage layout uses Kian Fazi's wonderful website template (also inspired by Jon Barron) <a href="https://www.kianfaizi.com" target="_blank" rel="noreferrer noopener">this guy</a>.
         </p>
 
 
