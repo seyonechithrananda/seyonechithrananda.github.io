@@ -210,8 +210,8 @@ layout: default
                 <br>
                 <i>Expert Opinions in Drug Discovery</i> (2021)
                 <br>
-                <input type="checkbox" id="trigger2">
-                [<label for="trigger2"><a id="fakelink">abstract</a></label>]
+                <input type="checkbox" id="uncertainty">
+                [<label for="uncertainty"><a id="fakelink">abstract</a></label>]
                 <span id="box">
                   Introduction: Computational modeling has rapidly advanced over the last decades. Recently, machine learning has emerged as a powerful and cost-effective strategy to learn from existing datasets and perform predictions on unseen molecules. Accordingly, the explosive rise of data-driven techniques raises an important question: What confidence can be assigned to molecular property predictions and what techniques can be used?
 
@@ -271,8 +271,8 @@ layout: default
                 <br>
                 <i>NeurIPS ML for Molecules Workshop</i>, 2020
                 <br>
-                <input type="checkbox" id="trigger2">
-                [<label for="trigger2"><a id="fakelink">abstract</a></label>]
+                <input type="checkbox" id="chemberta1">
+                [<label for="chemberta1"><a id="fakelink">abstract</a></label>]
                 <span id="box">
                   GNNs and chemical fingerprints are the predominant approaches to representing molecules for property prediction. However, in NLP, transformers have become the de-facto standard for representation learning thanks to their strong downstream task transfer. In parallel, the software ecosystem around transformers is maturing rapidly, with libraries like HuggingFace and BertViz enabling streamlined training and introspection. In this work, we make one of the first attempts to systematically evaluate transformers on molecular property prediction tasks via our ChemBERTa model. ChemBERTa scales well with pretraining dataset size, offering competitive downstream performance on MoleculeNet and useful attention-based visualization modalities. Our results suggest that transformers offer a promising avenue of future work for molecular representation learning and property prediction. To facilitate these efforts, we release a curated dataset of 77M SMILES from PubChem suitable for large-scale self-supervised pretraining.
                 </span> /
@@ -286,109 +286,27 @@ layout: default
             </tr>
 
 
-            <!-- pub -->
-            <tr>
-              <td class="project-media">
-                <img class="project-img" src="/assets/images/p3d.jpg" alt="p3d" title="skeletonization algorithm goes brrrr">
-              </td>
-              <td class="project-info">
-                <span class="project-title">Branch-Pipe: Improving graph skeletonization around branch points in 3D point clouds</span>
-                <br>
-                <a href="https://www.linkedin.com/in/illiaziamtsov/" target="_blank" rel="noreferrer noopener">Illia Ziamtsov</a>, <highlight>Kian Faizi</highlight>, <a href="https://www.cshl.edu/research/faculty-staff/saket-navlakha/" target="_blank" rel="noreferrer noopener">Saket Navlakha</a>
-                <br>
-                <i>Remote Sensing (open access).</i> (2021)
-                <br>
-                <input type="checkbox" id="trigger1">
-                [<label for="trigger1"><a id="fakelink">abstract</a></label>]
-                <span id="box">
-                  Modern plant phenotyping requires tools that are robust to noise and missing data, while being able to efficiently process large numbers of plants. In this manuscript, we studied skeletonization of plant architectures from 3D point clouds, which is critical for many downstream tasks, including analyses of plant shape, morphology, and branching angles. Specifically, we developed an algorithm to improve skeletonization at branch points (forks) by leveraging geometric properties of cylinders around branch points. We tested this algorithm on a diverse set of high-resolution 3D point clouds of tomato and tobacco plants, grown in five environments and across multiple developmental timepoints. Compared to existing methods for 3D skeletonization, our method efficiently and more accurately estimated branching angles, even in areas with noisy, missing, or non-uniformly sampled data. Our method is also applicable to inorganic datasets, such as scans of industrial pipes or urban scenes containing networks of complex cylindrical shapes.
-                </span> /
-                [<a href="https://doi.org/10.3390/rs13193802" target="_blank" rel="noreferrer noopener">paper</a>] /
-                [<a href="https://twitter.com/kianfaizi/status/1441069414837731343?s=20" target="_blank" rel="noreferrer noopener">thread</a>]
-                <p></p>
-                <p>
-                  I assisted in the development of a software package for plant phenotyping, with a focus on accurate skeleton graph extraction from noisy 3D point clouds.
-                </p>
-              </td>
-            </tr>
 
             <!-- pub -->
             <tr>
               <td class="project-media">
-                <img class="project-img" src="/assets/images/rootmarker.png" alt="ariadne" title="n paths diverged on an agar plate...">
+                <img class="project-img" src="/assets/images/dyanmo.png" alt="dynamo" title="dynamo cell-fate transition">
               </td>
               <td class="project-info">
-                <span class="project-title">Network Design Principles in the <i>Arabidopsis</i> Root System</span>
+                <span class="project-title">Analysis of human hematopoietic cells using Scanpy and Dynamo</span>
                 <br>
-                <highlight>Kian Faizi</highlight>, <a href="https://scholar.google.com/citations?user=heUMphcAAAAJ&hl=en&oi=ao" target="_blank" rel="noreferrer noopener">Matthieu Platre</a>, <a href="https://www.arjun-chandrasekhar-teaching.com" target="_blank" rel="noreferrer noopener">Arjun Chandrasekhar</a>, <a href="https://www.cshl.edu/research/faculty-staff/saket-navlakha/" target="_blank" rel="noreferrer noopener">Saket Navlakha</a>, <a href="https://www.salk.edu/scientist/wolfgang-busch/" target="_blank" rel="noreferrer noopener">Wolfgang Busch</a>
-                <br>
-                <i>manuscript in preparation</i>
-                <br>
-                <!-- <input type="checkbox" id="trigger3">
-                <label for="trigger3"><a id="fakelink">abstract</a></label>
-                <span id="box">
-                  <b>rootmarker</b> is a Python GUI for manually segmenting 2D scans of plant roots. Users point and click to place nodes, creating a skeletonized graph that describes the root system architecture. Includes support for annotating time-series GIFs.
-                </span> / -->
-                [<a href="https://github.com/kfaizi/ariadne" title="ariadne on GitHub" target="_blank" rel="noreferrer noopener">code</a>]
+                [<a href="https://docs.google.com/document/d/1oe9BXBw_lpwiHd0QVEPzW0YsFhKXTdXc2dGkUtijjDQ/edit?usp=sharing" title="boolean-lac on GitHub" target="_blank" rel="noreferrer noopener">Report</a>]
                 <p></p>
                 <p>
-                  I developed Ariadne, a time-series image segmentation tool for root phenotyping, and used it to measure Pareto-optimal trade-offs in root growth.
-                </p>
-              </td>
-            </tr>
-
-            <!-- pub -->
-            <tr>
-              <td class="project-media">
-                <img class="project-img" src="/assets/images/coexpression.png" alt="coexpression" title="making cytoscape work in jupyter is weirdly hard">
-              </td>
-              <td class="project-info">
-                <span class="project-title">Predicting Functional Homologs from Single-Cell Co-expression Networks</span>
-                <br>
-                [<a href="https://github.com/kfaizi/coexpression-analysis" title="coexpression-analysis on GitHub" target="_blank" rel="noreferrer noopener">code</a>]
-                <p></p>
-                <p>
-                  I built a basic workflow for predicting functional homologs of genes driving plant root growth, via co-expression network analysis of single-cell RNA-seq data.
-                </p>
-              </td>
-            </tr>
-
-            <!-- pub -->
-            <tr>
-              <td class="project-media">
-                <img class="project-img" src="/assets/images/wiring.png" alt="wiring" title="you may think this is oversimplified. you'd be right">
-              </td>
-              <td class="project-info">
-                <span class="project-title">A Boolean Network Model of the Bacterial <i>lac</i> Operon</span>
-                <br>
-                [<a href="https://github.com/kfaizi/boolean-lac" title="boolean-lac on GitHub" target="_blank" rel="noreferrer noopener">code</a>]
-                <p></p>
-                <p>
-                  I programmed a toy model of the <i>lac</i> operon as an asynchronous Boolean network, and simulated gene knockout and overexpression experiments. Class project for <a href="https://ccom.ucsd.edu/~acloninger/111A_F20/teachingMath111A.html" target="_blank" rel="noreferrer noopener">MATH 111A</a>.
-                </p>
-              </td>
-            </tr>
-
-            <!-- pub -->
-            <tr>
-              <td class="project-media">
-                <img class="project-img" src="/assets/images/crisprminer.png" alt="crisprminer" title="pretty phylogenetic classification of the variants I found">
-              </td>
-              <td class="project-info">
-                <span class="project-title">Metagenomic Discovery of Novel Type VI-D CRISPR Effectors</span>
-                <br>
-                <highlight>Kian Faizi</highlight>, <a href="https://biochemistry.stanford.edu/silvana-konermann" target="_blank" rel="noreferrer noopener">Silvana Konermann</a>, <a href="https://bioeng.berkeley.edu/faculty/patrick-hsu" target="_blank" rel="noreferrer noopener">Patrick Hsu</a>
-                <br>
-                [<a href="/assets/kian-faizi-srs-2019.pdf" title="srs-2019" target="_blank" rel="noreferrer noopener">poster</a>] /
-                [<a href="https://github.com/kfaizi/CRISPR-search" title="CRISPR-search on GitHub" target="_blank" rel="noreferrer noopener">code</a>]
-                <p></p>
-                <p>
-                  I wrote a Python pipeline to mine new orthologs of CRISPR-Cas13d from publicly available metagenomic sequence data at terabyte scale.
-                </p>
+                  I analyzed raw hematopoiesis data from the Cell paper, <i>‘Mapping transcriptomic vector fields of single cells’</i>. First, I used clustering tools such as the Leiden algorithm in Scanpy to find marker genes by analyzing the most differentially expressed genes in specific clusters with regards to their respective cell type. I then used dynamo’s ability to compute RNA velocity for sc-RNA seq data to better understand cell fate transition in the dataset, and compute in-silico perturbation tests to investigate cell fate outcomes after perturbing key regulators like GAT1. Class project for <a href="https://www.coursicle.com/berkeley/courses/BIOENG/190/" target="_blank" rel="noreferrer noopener">BIOENG 190/290 (cross-listed graduate course)</a>.
+                 </p>
               </td>
             </tr>
           </tbody>
         </table>
+
+
+        <--
 
         <!-- classes -->
         <h2>Teaching</h2>
@@ -422,6 +340,7 @@ layout: default
 
           </tbody>
         </table>
+        -->
 
 
         <!-- Acknowledgements -->
