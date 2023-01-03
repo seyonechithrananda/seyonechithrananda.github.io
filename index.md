@@ -6,7 +6,7 @@ layout: default
         <ul>
             <li><a href="/" class="active">Home</a></li>
             <li><a href="/blog.html">Blog</a></li>
-            <li><a href="/assets/kian-faizi-cv.pdf">CV</a></li>
+            <li><a href="/assets/Seyone_CV_Dec_2022">CV</a></li>
         </ul>
     </nav>
 </header>
@@ -76,7 +76,7 @@ layout: default
             <tr>
               <td>
                 <p>
-                  <a href="/blog.html">I'm starting to write again about</a> science, philosophy, biotech and public policy. Posts to be added below, and check out my <a href="https://seyonec.medium.com" target="_blank" rel="noreferrer noopener">Medium</a> for older ones:
+                  <a href="/blog.html">I'm starting to write again about</a> science, philosophy, biotech and public policy. Posts to be added below, and check out my <a href="https://seyonec.medium.com" target="_blank" rel="noreferrer noopener">Medium</a> for older ones.
                 </p>
 
                 <ul class="posts">
@@ -114,7 +114,7 @@ layout: default
                   Presently, I'm interested in the intersection of machine learning for single-cell genomics & protein biology.
                 </p>
                 <p>
-                   I'm a visiting undergrad researcher at the Broad Institute, advised by Eric Lander and Eeshit Dhaival Vashnav. This past summer, I was an research intern at <a href="https://www.dynotx.com" target="_blank" rel="noreferrer noopener">Dyno Therapeutics</a>, working on machine learning for protein engineering. Previously, I worked in the laboratory of Prof. Alan Aspuru-Guzik at the University of Toronto, and hacked on open source software at DeepChem, co-creating the ChemBERTa suite of chemical language models.
+                   I'm a visiting undergrad researcher at the Broad Institute, advised by Eric Lander and Eeshit Dhaival Vashnav. This past summer, I was an research intern at <a href="https://www.dynotx.com" target="_blank" rel="noreferrer noopener">Dyno Therapeutics</a>, working on machine learning for protein engineering. Previously, I worked in the laboratory of Prof. Alan Aspuru-Guzik at the University of Toronto, and hacked on open source software at DeepChem, co-creating the ChemBERTa suite of chemical language models. My publications are viewable on <a href="https://scholar.google.com/citations?user=ElZ0iNkAAAAJ&hl=en&oi=ao" target="_blank" rel="noreferrer noopener">Google Scholar</a>.
                 </p>
               </td>
             </tr>
@@ -310,48 +310,10 @@ layout: default
           </tbody>
         </table>
 
-
-        <!--
-
-        <!-- classes -->
-        <h2>Teaching</h2>
-        <table class="index">
-          <tbody>
-            <tr>
-              <td class="project-media">
-                <img class="project-img" src="/assets/images/sisyphus-titian.jpg" title="one must imagine teaching assistants happy" alt="love">
-              </td>
-              <td class="project-info">
-                <p>
-                  Helping people learn is one of my favorite things in the world. In the future, I'd like to compile a list of tools and resources that have helped me get better at doing it. For now, here's a list of classes I've helped teach, as well as any formal feedback I've received:
-                </p>
-                <p>
-                  <i>Note: Caltech doesn't provide a nice way to collate instructor reviews, so I've just copied over any comments I received in plaintext.</i>
-                </p>
-
-                <p></p>
-
-                <span class="project-title">Bi 1: Principles of Biology</span>, Caltech, spring 2022
-                <br>
-                [<a href="/bi1-22-feedback.html" rel="noreferrer noopener">student evaluations</a>]
-                
-                <p></p>
-
-                <span class="project-title"><a href="https://www.ucsd.edu/catalog/courses/BIOL.html#bicd102" target="_blank" rel="noreferrer noopener">BICD 102: Genetic Inquiry</a></span>, UCSD, fall 2020
-                <br>
-                [<a href="/assets/Faizi_Kian_Student_IA_Evaluation_BICD_102_FA20.pdf" target="_blank" rel="noreferrer noopener">student evaluations</a>] / [<a href="/assets/Faizi_Kian_Instructor_IA_Evaluation_BICD_102_FA20.pdf" target="_blank" rel="noreferrer noopener">professor's evaluation</a>]
-              </td>
-            </tr>
-
-          </tbody>
-        </table>
-        -->
-
-
         <!-- Acknowledgements -->
         <h2>Acknowledgements</h2>
         <p>
-          My homepage layout uses Kian Fazi's wonderful website template (also inspired by Jon Barron) <a href="https://www.kianfaizi.com" target="_blank" rel="noreferrer noopener">this guy</a>.
+          My homepage layout uses <a href="https://www.kianfaizi.com" target="_blank" rel="noreferrer noopener">Kian Fazi's</a> wonderful website template (also inspired by Jon Barron).
         </p>
 
 
