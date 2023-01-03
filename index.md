@@ -295,7 +295,7 @@ layout: default
             <!-- pub -->
             <tr>
               <td class="project-media">
-                <img class="project-img" src="/assets/images/dyanmo.jpg" alt="dynamo" title="dynamo cell-fate transition">
+                <img class="project-img" src="/assets/images/bioe190.png" alt="dynamo" title="dynamo cell-fate transition">
               </td>
               <td class="project-info">
                 <span class="project-title">Analysis of human hematopoietic cells using Scanpy and Dynamo</span>
