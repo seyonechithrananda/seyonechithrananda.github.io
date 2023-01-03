@@ -35,10 +35,10 @@ layout: default
             <tr style="padding:0px">
               <td style="width:63%;vertical-align:top">
                 <p>
-                  Hi, I'm Seyone, an undergrad student at Berkeley studying computer science & bioengineering. I'm interested in using computation as a mechanicsm for how biology works — and how we can engineer it to improve human health. My research goal is to build computational tools for the design, engineering & interpretation of biological systems.
+                  Hi, I'm Seyone, an undergrad student at Berkeley studying computer science & bioengineering. I'm interested in using computation as a mechanism for understanding how biology works — and how we can engineer it to improve human health. My research goal is to build computational tools for the design, engineering & interpretation of biological systems.
                 </p>                  
                 <p>
-                  <highlight>If you'd like to chat, feel free to email me! <a href="mailto:seyonec@berkeley.edu">say hi</a>!</highlight> I'm always excited to talk all things science. You can also find me on <a href="https://twitter.com/SeyoneC" target="_blank" rel="noreferrer noopener">Twitter</a> and <a href="https://github.com/seyonechithrananda" target="_blank" rel="noreferrer noopener">GitHub</a>.
+                  <highlight>If you'd like to chat, feel free to <a href="mailto:seyonec@berkeley.edu">email me!</a>!</highlight> I'm always excited to talk all things science. You can also find me on <a href="https://twitter.com/SeyoneC" target="_blank" rel="noreferrer noopener">Twitter</a> and <a href="https://github.com/seyonechithrananda" target="_blank" rel="noreferrer noopener">GitHub</a>.
                 </p>
               </td>
               <td style="max-width:30%;vertical-align:text-top;padding-left:3%">
