@@ -162,6 +162,11 @@ layout: default
                 <br>
                 <i>NeurIPS ML for Structural Biology Workshop</i> (2022)
                 <br>
+                <input type="checkbox" id="trigger3">
+                [<label for="trigger3"><a id="fakelink">abstract</a></label>]
+                <span id="box">
+                  Abstract here.
+                </span> /
                 [<a href="https://recorder-v3.slideslive.com/?share=77740&s=6750961a-3f91-459a-9a77-e58ddf5d31aa" target="_blank" rel="noreferrer noopener">Presentation</a>] /
                 [<a href="https://nips.cc/media/PosterPDFs/NeurIPS%202022/59042.png?t=1669918914.4617863" title="NeurIPS Poster" target="_blank" rel="noreferrer noopener">Poster</a>]
                 <p></p>
@@ -210,8 +215,8 @@ layout: default
                 <br>
                 <i>Expert Opinions in Drug Discovery</i> (2021)
                 <br>
-                <input type="checkbox" id="uncertainty">
-                [<label for="uncertainty"><a id="fakelink">abstract</a></label>]
+                <input type="checkbox" id="trigger4">
+                [<label for="trigger4"><a id="fakelink">abstract</a></label>]
                 <span id="box">
                   Introduction: Computational modeling has rapidly advanced over the last decades. Recently, machine learning has emerged as a powerful and cost-effective strategy to learn from existing datasets and perform predictions on unseen molecules. Accordingly, the explosive rise of data-driven techniques raises an important question: What confidence can be assigned to molecular property predictions and what techniques can be used?
 
@@ -271,8 +276,8 @@ layout: default
                 <br>
                 <i>NeurIPS ML for Molecules Workshop</i>, 2020
                 <br>
-                <input type="checkbox" id="chemberta1">
-                [<label for="chemberta1"><a id="fakelink">abstract</a></label>]
+                <input type="checkbox" id="trigger5">
+                [<label for="trigger5"><a id="fakelink">abstract</a></label>]
                 <span id="box">
                   GNNs and chemical fingerprints are the predominant approaches to representing molecules for property prediction. However, in NLP, transformers have become the de-facto standard for representation learning thanks to their strong downstream task transfer. In parallel, the software ecosystem around transformers is maturing rapidly, with libraries like HuggingFace and BertViz enabling streamlined training and introspection. In this work, we make one of the first attempts to systematically evaluate transformers on molecular property prediction tasks via our ChemBERTa model. ChemBERTa scales well with pretraining dataset size, offering competitive downstream performance on MoleculeNet and useful attention-based visualization modalities. Our results suggest that transformers offer a promising avenue of future work for molecular representation learning and property prediction. To facilitate these efforts, we release a curated dataset of 77M SMILES from PubChem suitable for large-scale self-supervised pretraining.
                 </span> /
@@ -306,7 +311,7 @@ layout: default
         </table>
 
 
-        <--
+        <!--
 
         <!-- classes -->
         <h2>Teaching</h2>
