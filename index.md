@@ -323,11 +323,12 @@ layout: default
           
           - Dr. Bharath Ramsundar ~ Deep Forest Sciences
           - Dr. Angelica Parente ~ Sutter Hill Ventures
-          - Prof. Tyler Cowen ~ Mercatus Centre/Emergent Ventures
+          - Prof. Tyler Cowen ~ Merctus Centre/Emergent Ventures
           - Prof. Alan Aspuru-Guzik ~ University of Toronto
           - Prof. Eric Lander ~ Broad Institute of MIT & Harvard
           - Dr. Jeffrey Chan & Dr. David Brookes ~ Dyno Therapeutics
           - Navid Nathoo & Nadeem Nathoo ~ The Knowledge Society
+          - Arjun Sripathy ~ Tesla Autopilot/Berkeley
         </p>
 
 
