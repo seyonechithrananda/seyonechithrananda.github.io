@@ -324,7 +324,7 @@ layout: default
           
           <br>- Dr. Bharath Ramsundar ~ Deep Forest Sciences
           <br>- Dr. Angelica Parente ~ Sutter Hill Ventures
-          <br>- Prof. Tyler Cowen ~ Merctus Centre/Emergent Ventures
+          <br>- Prof. Tyler Cowen ~ Mercatus Centre/Emergent Ventures
           <br>- Prof. Alan Aspuru-Guzik ~ University of Toronto
           <br>- Prof. Eric Lander ~ Broad Institute of MIT & Harvard
           <br>- Dr. Jeffrey Chan & Dr. David Brookes ~ Dyno Therapeutics
