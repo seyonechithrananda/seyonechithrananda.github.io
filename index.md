@@ -321,14 +321,14 @@ layout: default
         <p>
           I've been very priviledged to learn from some incredible mentors over the years, both from research and other experience. Many of them took me on when I had nothing to offer them, and I can't thank them enough. In no particular order:
           
-          - Dr. Bharath Ramsundar ~ Deep Forest Sciences
-          - Dr. Angelica Parente ~ Sutter Hill Ventures
-          - Prof. Tyler Cowen ~ Merctus Centre/Emergent Ventures
-          - Prof. Alan Aspuru-Guzik ~ University of Toronto
-          - Prof. Eric Lander ~ Broad Institute of MIT & Harvard
-          - Dr. Jeffrey Chan & Dr. David Brookes ~ Dyno Therapeutics
-          - Navid Nathoo & Nadeem Nathoo ~ The Knowledge Society
-          - Arjun Sripathy ~ Tesla Autopilot/Berkeley
+          <br>- Dr. Bharath Ramsundar ~ Deep Forest Sciences
+          <br>- Dr. Angelica Parente ~ Sutter Hill Ventures
+          <br>- Prof. Tyler Cowen ~ Merctus Centre/Emergent Ventures
+          <br>- Prof. Alan Aspuru-Guzik ~ University of Toronto
+          <br>- Prof. Eric Lander ~ Broad Institute of MIT & Harvard
+          <br>- Dr. Jeffrey Chan & Dr. David Brookes ~ Dyno Therapeutics
+          <br>- Navid Nathoo & Nadeem Nathoo ~ The Knowledge Society
+          <br>- Arjun Sripathy ~ Tesla Autopilot/Berkeley
         </p>
 
 
