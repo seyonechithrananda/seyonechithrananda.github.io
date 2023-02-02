@@ -315,9 +315,10 @@ layout: default
         <p>
           My homepage layout uses <a href="https://www.kianfaizi.com" target="_blank" rel="noreferrer noopener">Kian Fazi's</a> wonderful website template (also inspired by Jon Barron).
         </p>
+        <br>
 
         <!-- Mentors -->
-        <h2>Acknowledgements</h2>
+        <h2>Mentors</h2>
         <p>
           I've been very priviledged to learn from some incredible mentors over the years, both from research and other experience. Many of them took me on when I had nothing to offer them, and I can't thank them enough. In no particular order:
           
