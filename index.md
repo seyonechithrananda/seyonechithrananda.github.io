@@ -316,6 +316,20 @@ layout: default
           My homepage layout uses <a href="https://www.kianfaizi.com" target="_blank" rel="noreferrer noopener">Kian Fazi's</a> wonderful website template (also inspired by Jon Barron).
         </p>
 
+        <!-- Mentors -->
+        <h2>Acknowledgements</h2>
+        <p>
+          I've been very priviledged to learn from some incredible mentors over the years, both from research and other experience. Many of them took me on when I had nothing to offer them, and I can't thank them enough. In no particular order:
+          
+          - Dr. Bharath Ramsundar ~ Deep Forest Sciences
+          - Dr. Angelica Parente ~ Sutter Hill Ventures
+          - Prof. Tyler Cowen ~ Mercatus Centre/Emergent Ventures
+          - Prof. Alan Aspuru-Guzik ~ University of Toronto
+          - Prof. Eric Lander ~ Broad Institute of MIT & Harvard
+          - Dr. Jeffrey Chan & Dr. David Brookes ~ Dyno Therapeutics
+          - Navid Nathoo & Nadeem Nathoo ~ The Knowledge Society
+        </p>
+
 
       </td>
     </tr>
