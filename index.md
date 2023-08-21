@@ -162,8 +162,8 @@ layout: default
                 <i>ICML Workshop on Computational Biology</i> (2023)
                 <br>
                 <input type="checkbox" id="trigger2">
-                [<a href="https://icml-compbio.github.io/2023/papers/WCBICML2023_paper138.pdf" title="Paper" target="_blank" rel="noreferrer noopener">preprint</a>]/
-                [<a href="assets/ICML CB workshop 2023.pdf" title="Poster" target="_blank" rel="noreferrer noopener">Gtthub</a>]
+                [<a href="https://icml-compbio.github.io/2023/papers/WCBICML2023_paper138.pdf" title="Paper" target="_blank" rel="noreferrer noopener">Preprint</a>]/
+                [<a href="assets/ICML CB workshop 2023.pdf" title="Poster" target="_blank" rel="noreferrer noopener">Poster</a>]
                 <p></p>
                 <p>
                   We present a protein semantic similarity search method for RNA-Guided endonuclease discovery, inspired by dense retrieval methods in open-domain question answering, and introduce a new dataset of CRISPR-Cas and evolutionary-related nucleases.
