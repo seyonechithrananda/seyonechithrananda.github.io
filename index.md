@@ -114,7 +114,7 @@ layout: default
                   Presently, I'm interested in the intersection of machine learning for single-cell genomics & protein biology.
                 </p>
                 <p>
-                   At Berkeley, I work in the laboratory of Jennifer Doudna with Ron Boger on problems like model-guided CRISPR engineering and tools for biological search. I am also a research intern at Microsoft Research New England on the BioML team, advised by Kevin Yang and Judith Amores. This past summer, I was an research intern at <a href="https://www.dynotx.com" target="_blank" rel="noreferrer noopener">Dyno Therapeutics</a>, working on machine learning for protein engineering. Previously, I worked in the laboratory of Prof. Alan Aspuru-Guzik at the University of Toronto, and hacked on open source software at DeepChem, co-creating the ChemBERTa suite of chemical language models. My publications are viewable on <a href="https://scholar.google.com/citations?user=ElZ0iNkAAAAJ&hl=en&oi=ao" target="_blank" rel="noreferrer noopener">Google Scholar</a>.
+                   At Berkeley, I work in the laboratory of Jennifer Doudna with Ron Boger on problems like model-guided CRISPR engineering and tools for biological search. I am also a research intern at Microsoft Research New England on the BioML team, advised by Kevin Yang and Judith Amores. Previously, I was an research intern at <a href="https://www.dynotx.com" target="_blank" rel="noreferrer noopener">Dyno Therapeutics</a>, working on machine learning for protein engineering. In high school, I worked in the laboratory of Prof. Alan Aspuru-Guzik at the University of Toronto, and hacked on open source software at DeepChem, co-creating the ChemBERTa suite of chemical language models. My publications are viewable on <a href="https://scholar.google.com/citations?user=ElZ0iNkAAAAJ&hl=en&oi=ao" target="_blank" rel="noreferrer noopener">Google Scholar</a>.
                 </p>
               </td>
             </tr>
@@ -149,6 +149,30 @@ layout: default
               </td>
             </tr> -->
 
+            <!-- pub -->
+            <tr>
+              <td class="project-media">
+                <img class="project-img" src="/assets/images/endonuc.png" alt="schematic" title="endonuclease">
+              </td>
+              <td class="project-info">
+                <span class="project-title">TOPH: Adapting A Contrastive Question-Answering Framework for Protein Search</span>
+                <br>
+                Ron Boger*, Amy X. Lu*, <highlight>Seyone Chithrananda*</highlight>, Kevin Yang, Petr Skopintsev, Ben Adler, Eric Wallace, Peter Yoon, Pieter Abbeel, Jennifer Doudna
+                <br>
+                <i>ICML Workshop on Computational Biology</i> (2023)
+                <br>
+                <input type="checkbox" id="trigger2">
+                [<a href="https://icml-compbio.github.io/2023/papers/WCBICML2023_paper138.pdf" title="Paper" target="_blank" rel="noreferrer noopener">preprint</a>]/
+                [<a href="assets/ICML CB workshop 2023.pdf" title="Poster" target="_blank" rel="noreferrer noopener">Gtthub</a>]
+                <p></p>
+                <p>
+                  We present a protein semantic similarity search method for RNA-Guided endonuclease discovery, inspired by dense retrieval methods in open-domain question answering, and introduce a new dataset of CRISPR-Cas and evolutionary-related nucleases.
+                </p>
+
+              </td>
+            </tr>
+
+
 
             <!-- pub -->
             <tr>
@@ -163,15 +187,11 @@ layout: default
                 <i>NeurIPS ML for Structural Biology Workshop</i> (2022)
                 <br>
                 <input type="checkbox" id="trigger3">
-                [<label for="trigger3"><a id="fakelink">abstract</a></label>]
-                <span id="box">
-                  Abstract here.
-                </span> /
                 [<a href="https://recorder-v3.slideslive.com/?share=77740&s=6750961a-3f91-459a-9a77-e58ddf5d31aa" target="_blank" rel="noreferrer noopener">Presentation</a>] /
                 [<a href="https://nips.cc/media/PosterPDFs/NeurIPS%202022/59042.png?t=1669918914.4617863" title="NeurIPS Poster" target="_blank" rel="noreferrer noopener">Poster</a>]
                 <p></p>
                 <p>
-                  Preprint public soon. I built a benchmark for evaluating autoregressive structure-based protein design models (ESM-IF1, ProteinMPNN) on protein design using the GB1 dataset, by evaluating the log-likelihoods and joint sampling probabilities on highly epistastic regions of the protein. Alongside Jeffrey and David, I developed a model distillation approach for improving the generative capabilities of ESM.
+                  We built a benchmark for evaluating autoregressive structure-based protein design models (ESM-IF1, ProteinMPNN) on protein design using the GB1 dataset, by evaluating the log-likelihoods and joint sampling probabilities on highly epistastic regions of the protein. Alongside Jeffrey and David, I developed a model distillation approach for improving the generative capabilities of ESM.
                 </p>
               </td>
             </tr>
