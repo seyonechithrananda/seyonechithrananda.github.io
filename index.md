@@ -42,7 +42,7 @@ layout: default
                 </p>
               </td>
               <td style="max-width:30%;vertical-align:text-top;padding-left:3%">
-                <a href="/assets/images/ny_profile.jpg" id="headshot"><img alt="headshot" title="it's me!" src="/assets/images/ny_profile.jpg"></a>
+                <a href="/assets/images/dc_cherryblossoms_2 copy.jpg" id="headshot"><img alt="headshot" title="it's me!" src="/assets/images/dc_cherryblossoms_2 copy.jpg"></a>
               </td>
             </tr>
           </tbody>
