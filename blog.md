@@ -7,7 +7,7 @@ title: Blog
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/blog.html" class="active">Blog</a></li>
-            <li><a href="/assets/Seyone_CV_Dec_2022.pdf">CV</a></li>
+            <li><a href="/assets/seyone_CV.pdf">CV</a></li>
         </ul>
     </nav>
 </header>
