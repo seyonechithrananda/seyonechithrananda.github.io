@@ -6,7 +6,7 @@ layout: default
         <ul>
             <li><a href="/" class="active">Home</a></li>
             <li><a href="/blog.html">Blog</a></li>
-            <li><a href="/assets/seyone_CV.pdf">CV</a></li>
+            <li><a href="/assets/seyone_CV_06_24.pdf">CV</a></li>
         </ul>
     </nav>
 </header>
