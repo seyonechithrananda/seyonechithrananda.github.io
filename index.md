@@ -6,7 +6,7 @@ layout: default
         <ul>
             <li><a href="/" class="active">Home</a></li>
             <li><a href="/blog.html">Blog</a></li>
-            <li><a href="/assets/seyone_CV_06_24.pdf">CV</a></li>
+            <li><a href="/assets/seyone_CV_11_24_.pdf">CV</a></li>
         </ul>
     </nav>
 </header>
@@ -153,6 +153,32 @@ layout: default
                 </p>
               </td>
             </tr> -->
+
+            <!-- pub -->
+            <tr>
+              <td class="project-media">
+                <img class="project-img" src="/assets/images/rna_models.jpeg" alt="schematic" title="rna_models">
+              </td>
+              <td class="project-info">
+                <span class="project-title">RNA language models predict mutations that improve RNA function</span>
+                <br>
+                Yekterina Shulgina*, Marena Trinidad*, Connor Langeberg*, Hunter Nisonoff*, <highlight>Seyone Chithrananda*</highlight>, ..., Jennifer Doudna, Jamie Cate
+                <br>
+                <i>In print, Nature Communicaations</i> (2024)
+                <br>
+                <input type="checkbox" id="trigger2">
+                [<a href="https://www.biorxiv.org/content/10.1101/2024.04.05.588317v2" title="Paper" target="_blank" rel="noreferrer noopener">Preprint</a>]/
+                [<a href="https://innovativegenomics.org/news/ai-rna-language-models/" title="Press" target="_blank" rel="noreferrer noopener">Press Release</a>]
+                [<a href="https://github.com/Doudna-lab/GARNET_DL" title="Code" target="_blank" rel="noreferrer noopener">Github</a>]
+                <p></p>
+                <p>
+                  Structured RNA lies at the heart of many central biological processes, from gene expression to catalysis. While advances in deep learning enable the prediction of accurate protein structural models, RNA structure prediction is not possible at 
+                  present due to a lack of abundant high-quality reference data. We present a new database (GARNET), for RNA structural and functional analysis anchored to the Genome Taxonomy Database,
+                  and minimal structure-aware autoregressive MPNN for RNA sequence design. Together, these aid us in identifying mutations in ribosomal RNA that confer increased thermostability to the Escherichia coli ribosome.
+                </p>
+
+              </td>
+            </tr>
 
             <!-- pub -->
             <tr>
@@ -348,11 +374,12 @@ layout: default
           I've been very priviledged to learn from some incredible mentors over the years, both from research and other experience. Many of them took me on when I had nothing to offer them, and I can't thank them enough. In no particular order:
           
           <br>- Dr. Bharath Ramsundar ~ Deep Forest Sciences
-          <br>- Dr. Angelica Parente ~ Sutter Hill Ventures
+          <br>- Ron Boger, Dr. Anastasios Angelopoulos, Prof. Jamie Cate, Prof. Jennifer Doudna ~ UC Berkeley
+          <br>- Dr. Kevin K. Yang, Dr. Judith Amores ~ Microsoft Research
+          <br>- Eric Nguyen, Prof. Brian Hie ~ Stanford University
+          <br>- Dr. Angelica Parente ~ Sutter Hill Ventures, Nurix
           <br>- Prof. Tyler Cowen ~ Mercatus Centre/Emergent Ventures
           <br>- Prof. Alan Aspuru-Guzik ~ University of Toronto
-          <br>- Prof. Eric Lander ~ Broad Institute of MIT & Harvard
-          <br>- Dr. Jeffrey Chan & Dr. David Brookes ~ Dyno Therapeutics
           <br>- Navid Nathoo & Nadeem Nathoo ~ The Knowledge Society
           <br>- Arjun Sripathy ~ Tesla Autopilot/Berkeley
         </p>
