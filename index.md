@@ -38,7 +38,7 @@ layout: default
                   Hi, I'm Seyone, an undergrad student at Berkeley studying computer science & bioengineering. I'm interested in using computation as a mechanism for understanding how biology works — and how we can engineer it to improve human health. My research goal is to build computational tools for the design, engineering & interpretation of biological systems.
                 </p>                  
                 <p>
-                  Beyond research, I've been involved on campus with <a href="https://ml.berkeley.edu/" target="_blank" rel="noreferrer noopener">Machine Learning at Berkeley</a> for 3 years, where I led the research commitee. We organize reading groups, mentor homegrown research projects, support members with funding to attend conferences, and create high-quality technical blogposts, among other things. I co-organize the <a href="https://sam.jajoo.fun/notes/bioml" target="_blank" rel="noreferrer noopener">BioML seminar series</a> with <a href="https://twitter.com/jajoosam?lang=en" target="_blank" rel="noreferrer noopener">Samarth Jajoo</a>, bringing leaders at the cutting-edge of comptuation and biology in industry, academia and policy to Berkeley. I am especially interested in mentoring and encouraging younger students interested in exploring research, startups, and biotech more broadly.
+                  Beyond research, I've been involved on campus with <a href="https://ml.berkeley.edu/" target="_blank" rel="noreferrer noopener">Machine Learning at Berkeley</a> for 3 years, where I led the research commitee. We write high-quality technical blogposts, mentor homegrown research projects, support members with funding to attend conferences, among other things. I also co-organize the <a href="https://sam.jajoo.fun/notes/bioml" target="_blank" rel="noreferrer noopener">BioML seminar series</a> with <a href="https://twitter.com/jajoosam?lang=en" target="_blank" rel="noreferrer noopener">Samarth Jajoo</a>, bringing leaders at the cutting-edge of comptuation and biology in industry, academia and policy to Berkeley. I am particularly interested in mentoring and encouraging younger students interested in exploring research, startups, and biotech more broadly.
                 </p>
                 <p>
                   <highlight>If you'd like to chat, feel free to <a href="mailto:seyonec@berkeley.edu">email me!</a>!</highlight> I'm always excited to talk all things science. You can also find me on <a href="https://twitter.com/SeyoneC" target="_blank" rel="noreferrer noopener">Twitter</a> and <a href="https://github.com/seyonechithrananda" target="_blank" rel="noreferrer noopener">GitHub</a>.
@@ -79,7 +79,7 @@ layout: default
             <tr>
               <td>
                 <p>
-                  <a href="/blog.html">I'm starting to write again about</a> science, philosophy, biotech and public policy. Posts to be added below, and check out my <a href="https://seyonec.medium.com" target="_blank" rel="noreferrer noopener">Medium</a> for older ones.
+                  <a href="/blog.html">I'm hope to finally write again about</a> science, philosophy, biotech and public policy. Posts to be added below, and check out my <a href="https://seyonec.medium.com" target="_blank" rel="noreferrer noopener">Medium</a> for older ones.
                 </p>
 
                 <ul class="posts">
@@ -114,12 +114,13 @@ layout: default
             <tr>
               <td>
                 <p>
-                  Presently, I'm interested in the intersection of machine learning for systems & protein biology, with an emphasis on designing methods to both learn from and accelerate evolution.
+                  Presently, I'm interested in the intersection of machine learning for systems & protein biology, with an emphasis on designing trustworthy methods to learn from and accelerate evolution. At Berkeley, I work in the laboratory of Prof. Jennifer Doudna with Ron Boger on problems like model-guided protein evolution, structure-conditioned RNA sequence design, and tools for stastically-robust protein function annotation (in collaboration with Dr. Anastasios Angelopoulos and Prof. Michael I Jordan).
                 </p>
                 <p>
-                   This summer, I am a visiting researcher at the Arc Institute in the <a href="https://evodesign.org/" target="_blank" rel="noreferrer noopener">Laboratory of Evolutionary Design</a>, advised by Brian Hie.
+                   Most recently this summer, I was a visiting researcher at the Arc Institute in the <a href="https://evodesign.org/" target="_blank" rel="noreferrer noopener">Laboratory of Evolutionary Design</a>, advised by Prof. Brian Hie, working on controllable DNA sequence design over multi-kilobase genome tracks.
+                   Previously, I was did research with wonderful folks at Microsoft Research New England on the BioML team, advised by Dr. Kevin Yang and Dr. Judith Amores. 
                    
-                   At Berkeley, I work in the laboratory of Jennifer Doudna with Ron Boger on problems like model-guided CRISPR engineering, structure-conditioned RNA sequence design, and tools for stastically-robust protein function annotation. Previously, I was did research with wonderful folks at Microsoft Research New England on the BioML team, advised by Kevin Yang and Judith Amores. and interned at <a href="https://www.dynotx.com" target="_blank" rel="noreferrer noopener">Dyno Therapeutics</a>, working on machine learning for AAV capsid engineering. In high school, I worked in the laboratory of Prof. Alan Aspuru-Guzik at the University of Toronto, and hacked on open source software at DeepChem, co-creating the ChemBERTa suite of chemical language models. My publications are viewable on <a href="https://scholar.google.com/citations?user=ElZ0iNkAAAAJ&hl=en&oi=ao" target="_blank" rel="noreferrer noopener">Google Scholar</a>.
+                   I got my start in research in the laboratory of Prof. Alan Aspuru-Guzik at the University of Toronto, while hacking on open source software at DeepChem, co-creating the ChemBERTa suite of chemical language models. My publications are viewable through my <a href="https://scholar.google.com/citations?user=ElZ0iNkAAAAJ&hl=en&oi=ao" target="_blank" rel="noreferrer noopener">Google Scholar</a>.
                 </p>
               </td>
             </tr>
@@ -157,18 +158,72 @@ layout: default
             <!-- pub -->
             <tr>
               <td class="project-media">
+                <img class="project-img" src="/assets/images/exonuclease_hit.png" alt="schematic" title="exonuclease">
+              </td>
+              <td class="project-info">
+                <span class="project-title">Mapping the combinatorial coding between olfactory receptors and perception with deep learning</span>
+                <br>
+                <highlight>Seyone Chithrananda</highlight>, Judith Amores*, Kevin K Yang*
+                <br>
+                <i>Under review, Cell Systems</i> (2024)
+                <br>
+                <input type="checkbox" id="trigger2">
+                [<a href="https://www.biorxiv.org/content/10.1101/2024.09.16.613334v1" title="Paper" target="_blank" rel="noreferrer noopener">Preprint</a>]/
+                [<a href="https://x.com/SeyoneC/status/1836158359457927663" title="Tweetorial" target="_blank" rel="noreferrer noopener">Tweetorial</a>]
+                [<a href="https://github.com/microsoft/olfaction" title="Code" target="_blank" rel="noreferrer noopener">Github</a>]
+                <p></p>
+                <p>
+                  The sense of smell remains poorly understood, especially in contrast to visual and auditory coding. At the core of our sense of smell is the olfactory information flow, in which odorant molecules activate a subset of our olfactory receptors and combinations 
+                  of unique receptor activations code for unique odors. Here, we develop a novel, biologically-inspired approach that first maps odorant molecules to their respective OR activation profiles and subsequently predicts their odor percepts. Despite a lack of 
+                  overlap between molecules with OR activation data and percept annotations, our joint model improves percept prediction by leveraging the OR activation profile of each odorant as auxiliary features in predicting its percepts. We also further study the odorant-OR 
+                  models predictive ability, showing it can distinguish binding patterns across unique OR families, as well as between protein-coding genes or frequently occuring pseudogenes in the human olfactory subgenome. This work may aid in the potential discovery of novel 
+                  odorant ligands targeting functions of orphan ORs, and in further characterizing the relationship between chemical structures and percepts. In doing so, we hope to advance our understanding of olfactory perception and the design of new odorants with desired perceptual qualities.
+                </p>
+
+              </td>
+            </tr>
+
+            <tr>
+              <td class="project-media">
+                <img class="project-img" src="/assets/images/exonuclease_hit.png" alt="schematic" title="exonuclease">
+              </td>
+              <td class="project-info">
+                <span class="project-title">Functional protein mining with conformal guarantees</span>
+                <br>
+                Ron Boger, <highlight>Seyone Chithrananda</highlight>, Anastasios Angelopoulos, Peter H. Yoon, Michael I. Jordan, Jennifer Doudna
+                <br>
+                <i>In print, Nature Communicaations</i> (2024)
+                <br>
+                <input type="checkbox" id="trigger2">
+                [<a href="https://www.biorxiv.org/content/10.1101/2024.06.27.601042v5" title="Paper" target="_blank" rel="noreferrer noopener">Preprint</a>]/
+                <!-- [<a href="https://innovativegenomics.org/news/ai-rna-language-models/" title="Press" target="_blank" rel="noreferrer noopener">Press Release</a>] -->
+                [<a href="https://github.com/ronboger/conformal-protein-retrieval" title="Code" target="_blank" rel="noreferrer noopener">Github</a>]
+                <p></p>
+                <p>
+                  Molecular structure prediction and homology detection provide a promising path to discovering new protein function and evolutionary relationships. However, current approaches lack statistical reliability assurances, limiting their practical utility 
+                  for selecting proteins for further experimental and in-silico characterization. We introduce a novel approach to protein search leveraging principles from conformal prediction, offering a framework that ensures statistical guarantees with user-specified 
+                  risk and provides calibrated probabilities (rather than raw ML scores) for any protein search model. We deploy this method in annotating genes of unknown function, show it functions as an SoTA enzyme search strategy with no model-post training, and 
+                  demonstrate how to utilize it to robustly and rapidly pre-filter proteins using surrogate models prior to running computationally intensive structural alignment algorithms like DALI.
+                </p>
+
+              </td>
+            </tr>
+
+
+            <tr>
+              <td class="project-media">
                 <img class="project-img" src="/assets/images/rna_models.jpeg" alt="schematic" title="rna_models">
               </td>
               <td class="project-info">
                 <span class="project-title">RNA language models predict mutations that improve RNA function</span>
                 <br>
-                Yekterina Shulgina*, Marena Trinidad*, Connor Langeberg*, Hunter Nisonoff*, <highlight>Seyone Chithrananda*</highlight>, ..., Jennifer Doudna, Jamie Cate
+                Yekterina Shulgina*, Marena Trinidad*, Connor Langeberg*, Hunter Nisonoff*, <highlight>Seyone Chithrananda*</highlight>, ... , Jennifer Doudna, Jamie Cate
                 <br>
                 <i>In print, Nature Communicaations</i> (2024)
                 <br>
                 <input type="checkbox" id="trigger2">
                 [<a href="https://www.biorxiv.org/content/10.1101/2024.04.05.588317v2" title="Paper" target="_blank" rel="noreferrer noopener">Preprint</a>]/
-                [<a href="https://innovativegenomics.org/news/ai-rna-language-models/" title="Press" target="_blank" rel="noreferrer noopener">Press Release</a>]
+                [<a href="https://innovativegenomics.org/news/ai-rna-language-models/" title="Press" target="_blank" rel="noreferrer noopener">Press Release</a>]/
                 [<a href="https://github.com/Doudna-lab/GARNET_DL" title="Code" target="_blank" rel="noreferrer noopener">Github</a>]
                 <p></p>
                 <p>
@@ -373,11 +428,11 @@ layout: default
         <p>
           I've been very priviledged to learn from some incredible mentors over the years, both from research and other experience. Many of them took me on when I had nothing to offer them, and I can't thank them enough. In no particular order:
           
-          <br>- Dr. Bharath Ramsundar ~ Deep Forest Sciences
           <br>- Ron Boger, Dr. Anastasios Angelopoulos, Prof. Jamie Cate, Prof. Jennifer Doudna ~ UC Berkeley
           <br>- Dr. Kevin K. Yang, Dr. Judith Amores ~ Microsoft Research
           <br>- Eric Nguyen, Prof. Brian Hie ~ Stanford University
-          <br>- Dr. Angelica Parente ~ Sutter Hill Ventures, Nurix
+          <br>- Dr. Bharath Ramsundar ~ Deep Forest Sciences
+          <br>- Dr. Angelica Parente ~ Sutter Hill Ventures, formerly Nurix Therapeutics
           <br>- Prof. Tyler Cowen ~ Mercatus Centre/Emergent Ventures
           <br>- Prof. Alan Aspuru-Guzik ~ University of Toronto
           <br>- Navid Nathoo & Nadeem Nathoo ~ The Knowledge Society
