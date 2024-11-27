@@ -191,7 +191,7 @@ layout: default
                 <br>
                 Ron Boger, <highlight>Seyone Chithrananda</highlight>, Anastasios Angelopoulos, Peter H. Yoon, Michael I. Jordan, Jennifer Doudna
                 <br>
-                <i>In print, Nature Communicaations</i> (2024)
+                <i>In print, Nature Communications</i> (2024)
                 <br>
                 <input type="checkbox" id="trigger2">
                 [<a href="https://www.biorxiv.org/content/10.1101/2024.06.27.601042v5" title="Paper" target="_blank" rel="noreferrer noopener">Preprint</a>]/
@@ -218,7 +218,7 @@ layout: default
                 <br>
                 Yekterina Shulgina*, Marena Trinidad*, Connor Langeberg*, Hunter Nisonoff*, <highlight>Seyone Chithrananda*</highlight>, ... , Jennifer Doudna, Jamie Cate
                 <br>
-                <i>In print, Nature Communicaations</i> (2024)
+                <i>In print, Nature Communications</i> (2024)
                 <br>
                 <input type="checkbox" id="trigger2">
                 [<a href="https://www.biorxiv.org/content/10.1101/2024.04.05.588317v2" title="Paper" target="_blank" rel="noreferrer noopener">Preprint</a>]/
