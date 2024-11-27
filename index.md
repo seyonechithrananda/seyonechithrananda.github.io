@@ -158,7 +158,7 @@ layout: default
             <!-- pub -->
             <tr>
               <td class="project-media">
-                <img class="project-img" src="/assets/images/exonuclease_hit.png" alt="schematic" title="exonuclease">
+                <img class="project-img" src="/assets/images/fig1c.png" alt="schematic" title="exonuclease">
               </td>
               <td class="project-info">
                 <span class="project-title">Mapping the combinatorial coding between olfactory receptors and perception with deep learning</span>
@@ -169,7 +169,7 @@ layout: default
                 <br>
                 <input type="checkbox" id="trigger2">
                 [<a href="https://www.biorxiv.org/content/10.1101/2024.09.16.613334v1" title="Paper" target="_blank" rel="noreferrer noopener">Preprint</a>]/
-                [<a href="https://x.com/SeyoneC/status/1836158359457927663" title="Tweetorial" target="_blank" rel="noreferrer noopener">Tweetorial</a>]
+                [<a href="https://x.com/SeyoneC/status/1836158359457927663" title="Tweetorial" target="_blank" rel="noreferrer noopener">Tweetorial</a>]/
                 [<a href="https://github.com/microsoft/olfaction" title="Code" target="_blank" rel="noreferrer noopener">Github</a>]
                 <p></p>
                 <p>
