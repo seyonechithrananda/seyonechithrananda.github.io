@@ -38,7 +38,7 @@ layout: default
                   Hi, I'm Seyone, an undergrad student at Berkeley studying computer science & bioengineering. I'm interested in using computation as a mechanism for understanding how biology works — and how we can engineer it to improve human health. My research goal is to build computational tools for the design, engineering & interpretation of biological systems.
                 </p>                  
                 <p>
-                  Beyond research, I've been involved on campus with <a href="https://ml.berkeley.edu/" target="_blank" rel="noreferrer noopener">Machine Learning at Berkeley</a> for 3 years, where I led the research commitee. We write high-quality technical blogposts, mentor homegrown research projects, support members with funding to attend conferences, among other things. I also co-organize the <a href="https://sam.jajoo.fun/notes/bioml" target="_blank" rel="noreferrer noopener">BioML seminar series</a> with <a href="https://twitter.com/jajoosam?lang=en" target="_blank" rel="noreferrer noopener">Samarth Jajoo</a>, bringing leaders at the cutting-edge of comptuation and biology in industry, academia and policy to Berkeley. I am particularly interested in mentoring and encouraging younger students interested in exploring research, startups, and biotech more broadly.
+                  Beyond research, I've been involved on campus with <a href="https://ml.berkeley.edu/" target="_blank" rel="noreferrer noopener">Machine Learning at Berkeley</a> for 3 years, where I led the research commitee. We write high-quality technical blogposts, mentor homegrown research projects, and support members with funding to attend conferences, among other things. I also co-organize the <a href="https://sam.jajoo.fun/notes/bioml" target="_blank" rel="noreferrer noopener">BioML seminar series</a> with <a href="https://twitter.com/jajoosam?lang=en" target="_blank" rel="noreferrer noopener">Samarth Jajoo</a>, bringing leaders at the cutting-edge of comptuation and biology in industry, academia and policy to Berkeley. I am particularly interested in mentoring and encouraging younger students interested in exploring research, startups, and biotech more broadly.
                 </p>
                 <p>
                   <highlight>If you'd like to chat, feel free to <a href="mailto:seyonec@berkeley.edu">email me!</a>!</highlight> I'm always excited to talk all things science. You can also find me on <a href="https://twitter.com/SeyoneC" target="_blank" rel="noreferrer noopener">Twitter</a> and <a href="https://github.com/seyonechithrananda" target="_blank" rel="noreferrer noopener">GitHub</a>.
@@ -118,7 +118,7 @@ layout: default
                 </p>
                 <p>
                    Most recently this summer, I was a visiting researcher at the Arc Institute in the <a href="https://evodesign.org/" target="_blank" rel="noreferrer noopener">Laboratory of Evolutionary Design</a>, advised by Prof. Brian Hie, working on controllable DNA sequence design over multi-kilobase genome tracks.
-                   Previously, I was did research with wonderful folks at Microsoft Research New England on the BioML team, advised by Dr. Kevin Yang and Dr. Judith Amores. 
+                   Previously, I did research with wonderful folks at Microsoft Research New England on the BioML team, advised by Dr. Kevin Yang and Dr. Judith Amores. 
                    
                    I got my start in research in the laboratory of Prof. Alan Aspuru-Guzik at the University of Toronto, while hacking on open source software at DeepChem, co-creating the ChemBERTa suite of chemical language models. My publications are viewable through my <a href="https://scholar.google.com/citations?user=ElZ0iNkAAAAJ&hl=en&oi=ao" target="_blank" rel="noreferrer noopener">Google Scholar</a>.
                 </p>
@@ -173,11 +173,10 @@ layout: default
                 [<a href="https://github.com/microsoft/olfaction" title="Code" target="_blank" rel="noreferrer noopener">Github</a>]
                 <p></p>
                 <p>
-                  The sense of smell remains poorly understood, especially in contrast to visual and auditory coding. At the core of our sense of smell is the olfactory information flow, in which odorant molecules activate a subset of our olfactory receptors and combinations 
-                  of unique receptor activations code for unique odors. Here, we develop a novel, biologically-inspired approach that first maps odorant molecules to their respective OR activation profiles and subsequently predicts their odor percepts. Despite a lack of 
-                  overlap between molecules with OR activation data and percept annotations, our joint model improves percept prediction by leveraging the OR activation profile of each odorant as auxiliary features in predicting its percepts. We also further study the odorant-OR 
-                  models predictive ability, showing it can distinguish binding patterns across unique OR families, as well as between protein-coding genes or frequently occuring pseudogenes in the human olfactory subgenome. This work may aid in the potential discovery of novel 
-                  odorant ligands targeting functions of orphan ORs, and in further characterizing the relationship between chemical structures and percepts. In doing so, we hope to advance our understanding of olfactory perception and the design of new odorants with desired perceptual qualities.
+                  At the core of our sense of smell is the olfactory system, in which odorant molecules activate a subset of human olfactory receptors, and combinations of unique receptor activations code for unique odors. Here, we develop a novel, biologically-inspired
+                  approach that first maps odorant molecules to their respective OR receptors and subsequently predicts their odor percepts. Our joint model improves percept prediction by leveraging the OR activation profile of each odorant as auxiliary features in predicting 
+                  its percepts. We also further study the odorant-OR models predictive ability, showing it can distinguish binding patterns across unique OR families, as well as between protein-coding genes or frequently occuring pseudogenes in the human olfactory subgenome.
+                  This work may aid in the potential discovery of novel odorant ligands driving the signalling of orphan ORs, and in further characterizing the relationship between chemical structures and odor perception.
                 </p>
 
               </td>
@@ -258,26 +257,28 @@ layout: default
               </td>
             </tr>
 
-
-
             <!-- pub -->
             <tr>
               <td class="project-media">
-                <img class="project-img" src="/assets/images/gb1.jpeg" alt="gb1" title="gb1 design region">
+                <img class="project-img" src="/assets/images/scaling_law.png" alt="data scaling law" title="scaling law">
               </td>
               <td class="project-info">
-                <span class="project-title">A Benchmark Framework for Evaluating Structure-to-Sequence Models for Protein Design</span>
+                <span class="project-title">ChemBERTa: Large-Scale Self-Supervised Pretraining for Molecular Property Prediction</span>
                 <br>
-                Jeffrey Chan, <highlight>Seyone Chithrananda</highlight>, David Brookes, Sam Sinai
+                <highlight>Seyone Chithrananda</highlight>, Gabriel Grand, Bharath Ramsundar
                 <br>
-                <i>NeurIPS ML for Structural Biology Workshop</i> (2022)
+                <i>NeurIPS ML for Molecules Workshop</i>, 2020
                 <br>
-                <input type="checkbox" id="trigger3">
-                [<a href="https://recorder-v3.slideslive.com/?share=77740&s=6750961a-3f91-459a-9a77-e58ddf5d31aa" target="_blank" rel="noreferrer noopener">Presentation</a>] /
-                [<a href="https://nips.cc/media/PosterPDFs/NeurIPS%202022/59042.png?t=1669918914.4617863" title="NeurIPS Poster" target="_blank" rel="noreferrer noopener">Poster</a>]
+                <input type="checkbox" id="trigger5">
+                [<label for="trigger5"><a id="fakelink">abstract</a></label>]
+                <span id="box">
+                  GNNs and chemical fingerprints are the predominant approaches to representing molecules for property prediction. However, in NLP, transformers have become the de-facto standard for representation learning thanks to their strong downstream task transfer. In parallel, the software ecosystem around transformers is maturing rapidly, with libraries like HuggingFace and BertViz enabling streamlined training and introspection. In this work, we make one of the first attempts to systematically evaluate transformers on molecular property prediction tasks via our ChemBERTa model. ChemBERTa scales well with pretraining dataset size, offering competitive downstream performance on MoleculeNet and useful attention-based visualization modalities. Our results suggest that transformers offer a promising avenue of future work for molecular representation learning and property prediction. To facilitate these efforts, we release a curated dataset of 77M SMILES from PubChem suitable for large-scale self-supervised pretraining.
+                </span> /
+                [<a href="https://ml4molecules.github.io/papers2020/ML4Molecules_2020_paper_67.pdf" title="workshop" target="_blank" rel="noreferrer noopener">workshop paper</a>]/
+                [<a href="https://www.youtube.com/watch?v=b3AMBZsgvug&t=2497s" title="talk" target="_blank" rel="noreferrer noopener">Talk</a>]
                 <p></p>
                 <p>
-                  We built a benchmark for evaluating autoregressive structure-based protein design models (ESM-IF1, ProteinMPNN) on protein design using the GB1 dataset, by evaluating the log-likelihoods and joint sampling probabilities on highly epistastic regions of the protein. Alongside Jeffrey and David, I developed a model distillation approach for improving the generative capabilities of ESM.
+                  Lead author on ChemBERTa, the first language model for molecular property prediction. Developed open-source project, amassing ~12M+ model downloads and ~500 citations to date.
                 </p>
               </td>
             </tr>
@@ -303,7 +304,7 @@ layout: default
                 [<a href="https://github.com/seyonechithrananda/bert-loves-chemistry" title="Github" target="_blank" rel="noreferrer noopener">Gtthub</a>]
                 <p></p>
                 <p>
-                  Continuation of ChemBERTa project, working to scale pre-training language models from 10M to 77M molecules, and develop a novel pre-training task, <i>multi-task regression</i>. Worked on open-source integration of tokenizers, models within DeepChem library.
+                  Continuation of ChemBERTa project, working to scale pre-training language models from 10M to 77M molecules, and develop a novel pre-training task, <i>multi-task regression</i>. Our open-source model release is used in several pharma/biotech pipelines, encompassing ~150 citations to date.
                 </p>
               </td>
             </tr>
@@ -373,29 +374,24 @@ layout: default
             <!-- pub -->
             <tr>
               <td class="project-media">
-                <img class="project-img" src="/assets/images/scaling_law.png" alt="data scaling law" title="scaling law">
+                <img class="project-img" src="/assets/images/gb1.jpeg" alt="gb1" title="gb1 design region">
               </td>
               <td class="project-info">
-                <span class="project-title">ChemBERTa: Large-Scale Self-Supervised Pretraining for Molecular Property Prediction</span>
+                <span class="project-title">A Benchmark Framework for Evaluating Structure-to-Sequence Models for Protein Design</span>
                 <br>
-                <highlight>Seyone Chithrananda</highlight>, Gabriel Grand, Bharath Ramsundar
+                Jeffrey Chan, <highlight>Seyone Chithrananda</highlight>, David Brookes, Sam Sinai
                 <br>
-                <i>NeurIPS ML for Molecules Workshop</i>, 2020
+                <i>NeurIPS ML for Structural Biology Workshop</i> (2022)
                 <br>
-                <input type="checkbox" id="trigger5">
-                [<label for="trigger5"><a id="fakelink">abstract</a></label>]
-                <span id="box">
-                  GNNs and chemical fingerprints are the predominant approaches to representing molecules for property prediction. However, in NLP, transformers have become the de-facto standard for representation learning thanks to their strong downstream task transfer. In parallel, the software ecosystem around transformers is maturing rapidly, with libraries like HuggingFace and BertViz enabling streamlined training and introspection. In this work, we make one of the first attempts to systematically evaluate transformers on molecular property prediction tasks via our ChemBERTa model. ChemBERTa scales well with pretraining dataset size, offering competitive downstream performance on MoleculeNet and useful attention-based visualization modalities. Our results suggest that transformers offer a promising avenue of future work for molecular representation learning and property prediction. To facilitate these efforts, we release a curated dataset of 77M SMILES from PubChem suitable for large-scale self-supervised pretraining.
-                </span> /
-                [<a href="https://ml4molecules.github.io/papers2020/ML4Molecules_2020_paper_67.pdf" title="workshop" target="_blank" rel="noreferrer noopener">workshop paper</a>]/
-                [<a href="https://www.youtube.com/watch?v=b3AMBZsgvug&t=2497s" title="talk" target="_blank" rel="noreferrer noopener">Talk</a>]
+                <input type="checkbox" id="trigger3">
+                <!-- [<a href="https://recorder-v3.slideslive.com/?share=77740&s=6750961a-3f91-459a-9a77-e58ddf5d31aa" target="_blank" rel="noreferrer noopener">Presentation</a>] / -->
+                [<a href="https://nips.cc/media/PosterPDFs/NeurIPS%202022/59042.png?t=1669918914.4617863" title="NeurIPS Poster" target="_blank" rel="noreferrer noopener">Poster</a>]
                 <p></p>
                 <p>
-                  Lead author on ChemBERTa, the first language model for molecular property prediction. Developed open-source project, amassing ~1M model downloads and ~110 citations to date.
+                  We built a benchmark for evaluating autoregressive structure-based protein design models (ESM-IF1, ProteinMPNN) on protein design using the GB1 dataset, by evaluating the log-likelihoods and joint sampling probabilities on highly epistastic regions of the protein. Alongside Jeffrey and David, I developed a model distillation approach for improving the generative capabilities of ESM.
                 </p>
               </td>
             </tr>
-
 
 
             <!-- pub -->
