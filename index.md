@@ -51,6 +51,16 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student studying m
       <span class="paper-meta">Digital Discovery, 2026 · with Riya Singh and colleagues</span>
       <span class="paper-description">Open tools for training and evaluating chemical language models.</span>
     </li>
+    <li>
+      <a class="paper-title" href="https://arxiv.org/abs/2209.01712">ChemBERTa-2: Towards Chemical Foundation Models</a>
+      <span class="paper-meta">arXiv, 2022 · with Walid Ahmad, Elana Simon, and colleagues</span>
+      <span class="paper-description">Comparing ways to pretrain chemical language models on up to 77 million molecules.</span>
+    </li>
+    <li>
+      <a class="paper-title" href="https://arxiv.org/abs/2010.09885">ChemBERTa: Large-Scale Self-Supervised Pretraining for Molecular Property Prediction</a>
+      <span class="paper-meta">arXiv, 2020 · first author, with Gabriel Grand and Bharath Ramsundar</span>
+      <span class="paper-description">An early open chemical language model for predicting molecular properties.</span>
+    </li>
   </ul>
 </section>
 
