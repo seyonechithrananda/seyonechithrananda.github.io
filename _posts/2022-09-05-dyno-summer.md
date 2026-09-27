@@ -5,4 +5,4 @@ external_url: https://seyonec.medium.com/my-experience-in-cambridge-on-the-ml-re
 external_host: Medium Blog
 ---
 
-This post was published externally, so you should have been redirected. If (somehow) you've ended up here instead, try clicking <a href="{{page.external_url}}">this link</a>.
+This piece is hosted on Medium. <a href="{{ page.external_url }}">Read it there ↗</a>.

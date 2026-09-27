@@ -28,7 +28,7 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student studying m
   <ul class="publication-list">
     <li>
       <a class="paper-title" href="https://doi.org/10.1016/j.cels.2026.101711">Mapping the combinatorial coding between olfactory receptors and perception with deep learning</a>
-      <span class="paper-meta">Cell Systems, 2026 · with Judith Amores and Kevin K. Yang</span>
+      <span class="paper-meta">Cell Systems, 2026 · first author, with Judith Amores and Kevin K. Yang</span>
       <span class="paper-description">A model connecting odor molecules to their receptors and the smells we perceive.</span>
     </li>
     <li>
@@ -43,7 +43,7 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student studying m
     </li>
     <li>
       <a class="paper-title" href="https://doi.org/10.1038/s41467-024-54812-y">RNA language models predict mutations that improve RNA function</a>
-      <span class="paper-meta">Nature Communications, 2024 · with Yekaterina Shulgina and colleagues</span>
+      <span class="paper-meta">Nature Communications, 2024 · equal contributor, with Yekaterina Shulgina and colleagues</span>
       <span class="paper-description">Using sequence models and experiments to find changes that improve RNA function.</span>
     </li>
     <li>
