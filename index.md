@@ -10,7 +10,7 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student working on
     <div>
       <h1>Seyone Chithrananda</h1>
       <p class="pronunciation">(say-own)</p>
-      <p class="intro-line">I’m a PhD student in Bioengineering at <a href="https://bioengineering.stanford.edu/people/seyone-chithrananda">Stanford</a> (since 2025), co-advised by <a href="https://www.fischbachgroup.org/">Michael Fischbach</a> and <a href="https://evodesign.org/">Brian Hie</a>.</p>
+      <p class="intro-line">I’m a PhD student in Bioengineering at <a href="https://bioengineering.stanford.edu/people/seyone-chithrananda">Stanford</a> <span class="date-nowrap">(since 2025)</span>, co-advised by <a href="https://www.fischbachgroup.org/">Michael Fischbach</a> and <a href="https://evodesign.org/">Brian Hie</a>.</p>
     </div>
     {% if site.portrait %}<div class="intro-portrait-frame"><img class="intro-portrait" src="{{ site.portrait | relative_url }}" alt="Seyone Chithrananda smiling at Berkeley’s Sather Gate" width="1200" height="1800"></div>{% endif %}
   </div>
@@ -23,8 +23,8 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student working on
   <p>Viruses, bacteria, and parasites are a rich source of evolutionary innovation. Their genomes encode molecules that activate, redirect, or evade vertebrate innate and adaptive immunity; many remain uncharacterized. I’m building discovery engines to turn that diversity into testable hypotheses about immune function.</p>
   <p>In bacteria, I’m interested in the molecules that sharpen an immune response and those that blunt it. The Fischbach lab’s work on <a href="https://doi.org/10.1038/s41586-024-08489-4">commensal vaccines</a> and <a href="https://doi.org/10.1038/s41586-023-06431-8">defined gut communities such as hCom2</a> offers ways to study both sides—from adjuvant-like factors to immunoevasins and enzymes that degrade host defenses.</p>
   <ol class="research-list">
-    <li><strong>Discover.</strong> Can sequence- and structure-guided genome mining uncover divergent effectors across viruses, bacteria, and parasites, and reveal the host targets and pathways they modulate? One place I’m starting is the genomes of viruses that establish chronic infection.</li>
-    <li><strong>Design.</strong> Can we engineer proteins that make commensal vaccines more effective and steer the responses they elicit?</li>
+    <li><strong>Discover.</strong> Can sequence- and structure-guided genome mining reveal divergent effector ORFs, the host targets they act on, and new ligands of the innate immune repertoire?</li>
+    <li><strong>Design.</strong> Can we engineer proteins—adjuvants and antibody fragments that deliver antigen directly to MHC-II—that immunize effectively without engaging the inflammatory arm of innate immunity, so the response is shaped rather than inflamed and the commensal niche survives it?</li>
     <li><strong>Measure.</strong> How can we screen for immune tolerance and immunodominance—what the immune system overlooks and what it responds to most strongly?</li>
   </ol>
 </section>

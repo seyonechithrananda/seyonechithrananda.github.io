@@ -22,7 +22,7 @@ a:hover { color: var(--accent); }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 img { max-width: 100%; height: auto; }
 
-.site-shell { max-width: 850px; margin: 0 auto; padding: 0 28px; }
+.site-shell { max-width: 760px; margin: 0 auto; padding: 0 28px; }
 .site-nav { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; padding: 29px 0 18px; border-bottom: 1px solid var(--line); font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 1.4; }
 .site-nav-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 24px; }
 .site-nav a { text-decoration: none; color: var(--muted); }
@@ -36,7 +36,9 @@ img { max-width: 100%; height: auto; }
 h1, h2, h3 { font-weight: normal; line-height: 1.2; }
 h1 { font-size: clamp(38px, 5vw, 52px); letter-spacing: -.03em; margin: 0; }
 .pronunciation { font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: var(--muted); margin: 2px 0 25px; }
-.intro-line { font-size: 19px; line-height: 1.5; font-style: italic; }
+.intro-line { font-size: 18px; line-height: 1.5; font-style: italic; }
+.intro-line a { white-space: nowrap; }
+.date-nowrap { white-space: nowrap; }
 .focus-line { max-width: 690px; margin: 39px 0 0; font-size: clamp(25px, 3.2vw, 31px); line-height: 1.32; letter-spacing: -.015em; }
 .focus-context { max-width: 690px; margin: 14px 0 0; font-size: 17px; line-height: 1.5; color: var(--muted); }
 p { margin: 0 0 18px; }
@@ -50,9 +52,9 @@ p { margin: 0 0 18px; }
 
 .section-note { color: var(--muted); font-size: 16px; margin-bottom: 24px; }
 .publication-list { list-style: none; padding: 0; margin: 0; }
-.publication-list li { margin: 0 0 24px; }
+.publication-list li { margin: 0 0 22px; }
 .paper-title { display: inline; font-size: 18px; font-weight: bold; }
-.paper-meta { display: block; color: var(--muted); font-size: 15px; line-height: 1.45; margin-top: 2px; }
+.paper-meta { display: block; color: var(--muted); font-size: 14px; line-height: 1.45; margin-top: 1px; font-style: italic; }
 .paper-description { display: block; font-size: 16px; margin-top: 3px; }
 .elsewhere { margin-bottom: 64px; }
 .elsewhere p { margin-bottom: 9px; }
