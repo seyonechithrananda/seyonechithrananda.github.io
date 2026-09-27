@@ -19,10 +19,10 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student building t
 
 <section id="research" class="content-section" aria-labelledby="research-heading">
   <h2 id="research-heading">Research</h2>
-  <p>Viruses, bacteria, and parasites are a rich source of evolutionary innovation. Across pathogens and commensals, their molecules can activate, redirect, or evade the vertebrate immune system. I want to build models and experimental screens to find these factors and learn how they shape innate and adaptive immunity.</p>
+  <p>Viruses, bacteria, and parasites are a rich source of evolutionary innovation. Their genomes encode molecules that may activate, redirect, or evade vertebrate immunity, yet many remain uncharacterized. I want to build discovery engines that combine sequence, structure, and genomic context to nominate candidates whose effects on the host we can test.</p>
   <p>One question I keep coming back to: which molecular features of bacteria sharpen an immune response, and which blunt it? The Fischbach lab’s work on <a href="https://doi.org/10.1038/s41586-024-08489-4">commensal vaccines</a> and <a href="https://doi.org/10.1038/s41586-023-06431-8">defined gut communities such as hCom2</a> offers a way to study both sides—from adjuvant-like molecules to immunoevasins and enzymes that degrade host defenses.</p>
   <ol class="research-list">
-    <li><strong>Discover.</strong> Which microbial molecules modulate vertebrate immunity, and what do they teach us about host–microbe interactions?</li>
+    <li><strong>Discover.</strong> Can sequence- and structure-guided genome mining, supported by agents working across purpose-built analysis tools, reveal divergent effector ORFs and identify the host targets and pathways they modulate?</li>
     <li><strong>Design.</strong> Can we engineer proteins that make commensal vaccines more effective and steer the responses they elicit?</li>
     <li><strong>Measure.</strong> Can we build screens for immune tolerance and immunodominance—what the immune system overlooks, and what it responds to most strongly?</li>
   </ol>
