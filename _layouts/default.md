@@ -26,7 +26,6 @@
       <div class="site-nav-links">
         <a href="/#research">Research</a>
         <a href="/#publications">Publications</a>
-        <a href="/blog.html">Writing</a>
       </div>
     </nav>
     <main id="main-content" class="{% if page.homepage %}home-content{% else %}page-content{% endif %}">
