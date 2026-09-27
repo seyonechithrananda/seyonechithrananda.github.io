@@ -9,7 +9,7 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student working on
   <div class="intro-upper{% if site.portrait %} intro-upper--with-portrait{% endif %}">
     <div>
       <h1>Seyone Chithrananda</h1>
-      <p class="pronunciation">(say-on)</p>
+      <p class="pronunciation">(say-own)</p>
       <p class="intro-line">I’m a PhD student in Bioengineering at <a href="https://bioengineering.stanford.edu/people/seyone-chithrananda">Stanford</a> (since 2025), co-advised by <a href="https://www.fischbachgroup.org/">Michael Fischbach</a> and <a href="https://evodesign.org/">Brian Hie</a>.</p>
     </div>
     {% if site.portrait %}<div class="intro-portrait-frame"><img class="intro-portrait" src="{{ site.portrait | relative_url }}" alt="Seyone Chithrananda smiling at Berkeley’s Sather Gate" width="4000" height="6000"></div>{% endif %}
