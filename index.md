@@ -6,9 +6,14 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student building t
 ---
 
 <header class="intro">
-  <h1>Seyone Chithrananda</h1>
-  <p class="pronunciation">/say-on/</p>
-  <p class="intro-line">I’m a second-year PhD student in Bioengineering at <a href="https://bioengineering.stanford.edu/people/seyone-chithrananda">Stanford</a>, co-advised by <a href="https://www.fischbachgroup.org/">Michael Fischbach</a> and <a href="https://evodesign.org/">Brian Hie</a>.</p>
+  <div class="intro-upper{% if site.portrait %} intro-upper--with-portrait{% endif %}">
+    <div>
+      <h1>Seyone Chithrananda</h1>
+      <p class="pronunciation">/say-on/</p>
+      <p class="intro-line">I’m a second-year PhD student in Bioengineering at <a href="https://bioengineering.stanford.edu/people/seyone-chithrananda">Stanford</a>, co-advised by <a href="https://www.fischbachgroup.org/">Michael Fischbach</a> and <a href="https://evodesign.org/">Brian Hie</a>.</p>
+    </div>
+    {% if site.portrait %}<img class="intro-portrait" src="{{ site.portrait | relative_url }}" alt="Portrait of Seyone Chithrananda">{% endif %}
+  </div>
   <p class="focus-line">I build tools for the systematic discovery and engineering of molecular function.</p>
 </header>
 
