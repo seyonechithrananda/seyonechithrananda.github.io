@@ -46,7 +46,7 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student working on
     <li>
       <a class="paper-title" href="https://doi.org/10.1039/D5DD00348B">ChemBERTa-3: an open source training framework for chemical foundation models</a>
       <span class="paper-meta">Digital Discovery, 2026</span>
-      <span class="paper-description">An open-source framework scaled to 1.1 billion molecules, extending <a href="https://arxiv.org/abs/2010.09885">ChemBERTa (2020)</a> and <a href="https://arxiv.org/abs/2209.01712">ChemBERTa-2 (2022 preprint)</a>.</span>
+      <span class="paper-description">Open-source tools for training and comparing molecular models, with experiments up to 1.1 billion molecules. Earlier <a href="https://arxiv.org/abs/2010.09885">ChemBERTa (NeurIPS ML4Molecules 2020)</a> tested an early molecular transformer for property prediction; <a href="https://arxiv.org/abs/2209.01712">ChemBERTa-2 (ELLIS 2021; preprint 2022)</a> tested how pretraining scale affects performance.</span>
     </li>
     <li>
       <a class="paper-title" href="https://doi.org/10.1038/s41467-024-55676-y">Functional protein mining with conformal guarantees</a>
