@@ -2,14 +2,14 @@
 layout: default
 homepage: true
 title: Home
-summary: Seyone Chithrananda is a Stanford Bioengineering PhD student developing tools for molecular discovery, with current interests in microbes and immunity.
+summary: Seyone Chithrananda is a Stanford Bioengineering PhD student building tools for the systematic discovery and engineering of molecular function, with current interests in microbes and immunity.
 ---
 
 <header class="intro">
   <h1>Seyone Chithrananda</h1>
   <p class="pronunciation">/say-on/</p>
   <p class="intro-line">I’m a second-year PhD student in Bioengineering at <a href="https://bioengineering.stanford.edu/people/seyone-chithrananda">Stanford</a>, co-advised by <a href="https://www.fischbachgroup.org/">Michael Fischbach</a> and <a href="https://evodesign.org/">Brian Hie</a>.</p>
-  <p class="focus-line">I build tools to make molecular discovery more systematic.</p>
+  <p class="focus-line">I build tools for the systematic discovery and engineering of molecular function.</p>
 </header>
 
 <section id="research" class="content-section" aria-labelledby="research-heading">
