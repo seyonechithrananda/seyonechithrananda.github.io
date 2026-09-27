@@ -3,6 +3,11 @@ encoding: utf-8
 url: "https://seyonec.com"
 title: "Seyone Chithrananda"
 description: "Seyone Chithrananda is a Stanford Bioengineering PhD student working on machine learning for metagenomic discovery and tools to discover and engineer molecular function."
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
 collections:
   posts:
     permalink: /blog/:slug:output_ext
