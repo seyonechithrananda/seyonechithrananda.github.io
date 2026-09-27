@@ -45,7 +45,8 @@ p { margin: 0 0 18px; }
 
 .content-section { margin: 0 0 53px; }
 .content-section h2 { font-size: 24px; letter-spacing: -.015em; margin: 0 0 15px; }
-.research-doodle { display: block; float: right; width: 285px; margin: -32px -20px 6px 18px; }
+.research-doodle { display: block; float: right; width: 285px; margin: -32px -20px 6px 6px; }
+.research-doodle + p { text-wrap: pretty; }
 .gene-doodle { display: block; float: right; clear: right; width: 230px; margin: -2px -20px 10px 18px; }
 .content-section > p { max-width: 780px; }
 .research-list { list-style: none; padding: 0; margin: 20px 0 0; }
