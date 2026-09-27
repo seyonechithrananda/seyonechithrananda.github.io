@@ -25,6 +25,7 @@
       <a class="site-mark" href="/" aria-label="Seyone Chithrananda, home">S.</a>
       <div class="site-nav-links">
         <a href="/#research">Research</a>
+        <a href="/#background">Background</a>
         <a href="/#publications">Publications</a>
       </div>
     </nav>

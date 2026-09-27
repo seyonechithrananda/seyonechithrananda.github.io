@@ -29,6 +29,13 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student working on
   </ol>
 </section>
 
+<section id="background" class="content-section" aria-labelledby="background-heading">
+  <h2 id="background-heading">Background</h2>
+  <p>I came to biology through computational chemistry and open-source work on <a href="https://deepchem.io/">DeepChem</a> and <a href="https://arxiv.org/abs/2010.09885">ChemBERTa</a>, alongside early research with <a href="https://www.matter.toronto.edu/">Alan Aspuru-Guzik</a> in Toronto. At <a href="https://www.berkeley.edu/">Berkeley</a>, I studied computer science and bioengineering and worked in <a href="https://doudnalab.org/">Jennifer Doudna’s lab</a> on RNA and protein design. At Microsoft Research, I worked with Kevin Yang on models connecting odor molecules, receptors, and perception. At Dyno Therapeutics, I worked on structure-guided sequence models to navigate epistatic fitness landscapes for gene therapy vectors.</p>
+  <p>Before joining Michael and Brian’s labs, I rotated with <a href="https://profiles.stanford.edu/theodore-roth">Theo Roth</a>, learning to build scalable genetic discovery tools in primary human cells; with <a href="https://www.allenlabstanford.org/">Will Allen</a>, exploring high-throughput perturbation assays and algorithms for choosing which experiments to run next; and with <a href="https://profiles.stanford.edu/tony-wyss-coray">Tony Wyss-Coray</a>, using multiplexed mass spectrometry to map age-related changes in protein N-glycosylation. That last project also drew me toward immunology: glycans can mask antibody-binding sites, and changes in them can expose self-proteins to immune recognition, with implications for autoimmunity.</p>
+  <p>I helped lead the research committee at <a href="https://ml.berkeley.edu/">Machine Learning at Berkeley</a> and co-organized the BioML seminar series. I enjoy helping newer researchers find their footing; if you’re getting started in computational biology, feel free to <a href="mailto:seyonec@stanford.edu">email me</a>.</p>
+</section>
+
 <section id="publications" class="content-section" aria-labelledby="publications-heading">
   <h2 id="publications-heading">Selected publications</h2>
   <p class="section-note">A few projects that shaped how I think. <a href="https://scholar.google.com/citations?user=ElZ0iNkAAAAJ">Full list on Google Scholar ↗</a></p>
@@ -59,12 +66,6 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student working on
       <span class="paper-description">Using sequence models and experiments to find changes that improve RNA function.</span>
     </li>
   </ul>
-</section>
-
-<section id="background" class="content-section" aria-labelledby="background-heading">
-  <h2 id="background-heading">Background</h2>
-  <p>I came to biology through computational chemistry and open-source work on <a href="https://deepchem.io/">DeepChem</a> and <a href="https://arxiv.org/abs/2010.09885">ChemBERTa</a>, alongside early research with <a href="https://www.matter.toronto.edu/">Alan Aspuru-Guzik</a> in Toronto. At <a href="https://www.berkeley.edu/">Berkeley</a>, I studied computer science and bioengineering and worked in <a href="https://doudnalab.org/">Jennifer Doudna’s lab</a> on RNA and protein design. At Microsoft Research, I worked with Kevin Yang on models connecting odor molecules, receptors, and perception. At Dyno Therapeutics, I worked on structure-guided sequence models to navigate epistatic fitness landscapes for gene therapy vectors.</p>
-  <p>I helped lead the research committee at <a href="https://ml.berkeley.edu/">Machine Learning at Berkeley</a> and co-organized the BioML seminar series. I enjoy helping newer researchers find their footing; if you’re getting started in computational biology, feel free to <a href="mailto:seyonec@stanford.edu">email me</a>.</p>
 </section>
 
 <section id="elsewhere" class="content-section elsewhere" aria-labelledby="elsewhere-heading">
