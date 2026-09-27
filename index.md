@@ -19,7 +19,11 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student working on
 </header>
 
 <section id="research" class="content-section" aria-labelledby="research-heading">
-  <h2 id="research-heading">Research</h2>
+  <div class="research-heading">
+    <h2 id="research-heading">Research</h2>
+    <img class="research-doodle" src="{{ '/assets/combinatorial-doodle.png' | relative_url }}" alt="" width="2172" height="724">
+  </div>
+  <p>Whether I’m mapping odor molecules to receptors or microbial proteins to host targets, I’m navigating spaces too large to test exhaustively. I use models to nominate interactions and choose informative perturbations to test their function.</p>
   <p>Viruses, bacteria, and parasites are a rich source of evolutionary innovation. Their genomes encode molecules that activate, redirect, or evade vertebrate innate and adaptive immunity; many remain uncharacterized. I’m building discovery engines to turn that diversity into testable hypotheses about immune function.</p>
   <p>In bacteria, I’m interested in the molecules that sharpen an immune response and those that blunt it. The Fischbach lab’s work on <a href="https://doi.org/10.1038/s41586-024-08489-4">commensal vaccines</a> and <a href="https://doi.org/10.1038/s41586-023-06431-8">defined gut communities such as hCom2</a> offers ways to study both sides—from adjuvant-like factors to immunoevasins and enzymes that degrade host defenses.</p>
   <ol class="research-list">

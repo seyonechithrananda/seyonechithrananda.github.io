@@ -45,6 +45,9 @@ p { margin: 0 0 18px; }
 
 .content-section { margin: 0 0 53px; }
 .content-section h2 { font-size: 24px; letter-spacing: -.015em; margin: 0 0 15px; }
+.research-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 15px; }
+.research-heading h2 { margin: 0; }
+.research-doodle { display: block; width: min(180px, 35vw); height: auto; flex: none; }
 .content-section > p { max-width: 780px; }
 .research-list { list-style: none; padding: 0; margin: 20px 0 0; }
 .research-list li { margin: 0 0 13px; padding-left: 0; }
