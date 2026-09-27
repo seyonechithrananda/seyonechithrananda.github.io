@@ -28,7 +28,7 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student working on
   <p>In bacteria, I’m interested in the molecules that sharpen an immune response and those that blunt it. The Fischbach lab’s work on <a href="https://doi.org/10.1038/s41586-024-08489-4">commensal vaccines</a> and <a href="https://doi.org/10.1038/s41586-023-06431-8">defined gut communities such as hCom2</a> offers ways to study both sides—from adjuvant-like factors to immunoevasins and enzymes that degrade host defenses.</p>
   <ol class="research-list">
     <li><strong>Discover.</strong> Can sequence- and structure-guided genome mining reveal divergent effector ORFs, the host targets they act on, and new ligands of the innate immune repertoire?</li>
-    <li><strong>Design.</strong> Can we engineer proteins—adjuvants and antibody fragments that deliver antigen directly to MHC-II—that immunize effectively without engaging the inflammatory arm of innate immunity, so the response is shaped rather than inflamed and the commensal niche survives it?</li>
+    <li><strong>Design.</strong> Can we engineer proteins—adjuvants and antibody fragments that deliver antigen directly to MHC-II—that immunize effectively without engaging the inflammatory arm of innate immunity, so the response is better targeted and does not destroy the commensal niche?</li>
     <li><strong>Measure.</strong> How can we screen for immune tolerance and immunodominance—what the immune system overlooks and what it responds to most strongly?</li>
   </ol>
 </section>
