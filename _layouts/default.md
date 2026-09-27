@@ -22,10 +22,12 @@
 <body>
   <div class="site-shell">
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="/">Home</a>
-      <a href="/#research">Research</a>
-      <a href="/#publications">Publications</a>
-      <a href="/blog.html">Writing</a>
+      <a class="site-mark" href="/" aria-label="Seyone Chithrananda, home">S.</a>
+      <div class="site-nav-links">
+        <a href="/#research">Research</a>
+        <a href="/#publications">Publications</a>
+        <a href="/blog.html">Writing</a>
+      </div>
     </nav>
     <main id="main-content" class="{% if page.homepage %}home-content{% else %}page-content{% endif %}">
       {{ content }}

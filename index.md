@@ -2,23 +2,24 @@
 layout: default
 homepage: true
 title: Home
-summary: Seyone Chithrananda is a Stanford Bioengineering PhD student studying microbes, immunity, and biological design.
+summary: Seyone Chithrananda is a Stanford Bioengineering PhD student developing tools for molecular discovery, with current interests in microbes and immunity.
 ---
 
 <header class="intro">
   <h1>Seyone Chithrananda</h1>
   <p class="pronunciation">/say-on/</p>
   <p class="intro-line">I’m a second-year PhD student in Bioengineering at <a href="https://bioengineering.stanford.edu/people/seyone-chithrananda">Stanford</a>, co-advised by <a href="https://www.fischbachgroup.org/">Michael Fischbach</a> and <a href="https://evodesign.org/">Brian Hie</a>.</p>
-  <p>Viruses, bacteria, and parasites are a rich source of evolutionary innovation. Their proteins can be natural perturbagens—molecules that change how host cells behave. I’m interested in discovering what these factors do, how they interact with hosts, and what they reveal about immunity.</p>
+  <p class="focus-line">I build tools to make molecular discovery more systematic.</p>
 </header>
 
 <section id="research" class="content-section" aria-labelledby="research-heading">
   <h2 id="research-heading">Research</h2>
-  <p>My work is taking shape around three connected questions:</p>
+  <p>Viruses, bacteria, and parasites are a rich source of evolutionary innovation. Across pathogens and commensals, their molecules can activate, redirect, or evade the vertebrate immune system. I want to build models and experimental screens to find these factors and learn how they shape innate and adaptive immunity.</p>
+  <p>One question I keep coming back to: which molecular features of bacteria sharpen an immune response, and which blunt it? The Fischbach lab’s work on <a href="https://doi.org/10.1038/s41586-024-08489-4">commensal vaccines</a> and <a href="https://doi.org/10.1038/s41586-023-06431-8">defined gut communities such as hCom2</a> offers a way to study both sides—from adjuvant-like molecules to immunoevasins and enzymes that degrade host defenses.</p>
   <ol class="research-list">
-    <li><strong>Discover.</strong> Which microbial factors reshape immunity, and how do they interact with their hosts? I’m interested in model-guided discovery across pathogens and commensals.</li>
-    <li><strong>Design.</strong> Can we engineer proteins that help commensal bacteria become better vaccines?</li>
-    <li><strong>Measure.</strong> How can we screen for immune tolerance and immunodominance—what the immune system overlooks, and what it responds to most strongly?</li>
+    <li><strong>Discover.</strong> Which microbial molecules modulate vertebrate immunity, and what do they teach us about host–microbe interactions?</li>
+    <li><strong>Design.</strong> Can we engineer proteins that make commensal vaccines more effective and steer the responses they elicit?</li>
+    <li><strong>Measure.</strong> Can we build screens for immune tolerance and immunodominance—what the immune system overlooks, and what it responds to most strongly?</li>
   </ol>
 </section>
 

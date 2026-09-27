@@ -2,7 +2,7 @@ timezone: America/Los_Angeles
 encoding: utf-8
 url: "https://seyonec.com"
 title: "Seyone Chithrananda"
-description: "Seyone Chithrananda is a Stanford Bioengineering PhD student exploring microbes, immunity, and biological design."
+description: "Seyone Chithrananda is a Stanford Bioengineering PhD student developing tools for molecular discovery, with current interests in microbes and immunity."
 collections:
   posts:
     permalink: /blog/:slug:output_ext
