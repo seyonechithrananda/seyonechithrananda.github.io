@@ -28,45 +28,45 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student studying m
   <ul class="publication-list">
     <li>
       <a class="paper-title" href="https://doi.org/10.1016/j.cels.2026.101711">Mapping the combinatorial coding between olfactory receptors and perception with deep learning</a>
-      <span class="paper-meta">Cell Systems, 2026 · first author, with Judith Amores and Kevin K. Yang</span>
+      <span class="paper-meta">Cell Systems, 2026 · first author</span>
       <span class="paper-description">A model connecting odor molecules to their receptors and the smells we perceive.</span>
     </li>
     <li>
       <a class="paper-title" href="https://doi.org/10.64898/2026.08.27.741102">Forecasting viral evolution from phylogenetic trees</a>
-      <span class="paper-meta">bioRxiv, 2026 · with Ivan Specht, Soyoon Park, and colleagues</span>
+      <span class="paper-meta">bioRxiv, 2026</span>
       <span class="paper-description">Learning from evolutionary histories to anticipate future viral mutations.</span>
     </li>
     <li>
       <a class="paper-title" href="https://doi.org/10.1038/s41467-024-55676-y">Functional protein mining with conformal guarantees</a>
-      <span class="paper-meta">Nature Communications, 2025 · with Ron Boger and colleagues</span>
+      <span class="paper-meta">Nature Communications, 2025</span>
       <span class="paper-description">Searching protein databases efficiently while controlling the risk of missed results.</span>
     </li>
     <li>
       <a class="paper-title" href="https://doi.org/10.1038/s41467-024-54812-y">RNA language models predict mutations that improve RNA function</a>
-      <span class="paper-meta">Nature Communications, 2024 · equal contributor, with Yekaterina Shulgina and colleagues</span>
+      <span class="paper-meta">Nature Communications, 2024 · equal contribution</span>
       <span class="paper-description">Using sequence models and experiments to find changes that improve RNA function.</span>
     </li>
     <li>
       <a class="paper-title" href="https://doi.org/10.1039/D5DD00348B">ChemBERTa-3: an open source training framework for chemical foundation models</a>
-      <span class="paper-meta">Digital Discovery, 2026 · with Riya Singh and colleagues</span>
-      <span class="paper-description">Open tools for training and evaluating chemical language models.</span>
+      <span class="paper-meta">Digital Discovery, 2026</span>
+      <span class="paper-description">Open-source tools for reproducible chemical foundation models, demonstrated at a scale of 1.1 billion molecules.</span>
     </li>
     <li>
       <a class="paper-title" href="https://arxiv.org/abs/2209.01712">ChemBERTa-2: Towards Chemical Foundation Models</a>
-      <span class="paper-meta">arXiv, 2022 · with Walid Ahmad, Elana Simon, and colleagues</span>
-      <span class="paper-description">Comparing ways to pretrain chemical language models on up to 77 million molecules.</span>
+      <span class="paper-meta">ELLIS ML4Molecules, 2021 · arXiv 2022</span>
+      <span class="paper-description">Early evidence for how molecular language models scale, testing pretraining strategies on up to 77 million molecules.</span>
     </li>
     <li>
       <a class="paper-title" href="https://arxiv.org/abs/2010.09885">ChemBERTa: Large-Scale Self-Supervised Pretraining for Molecular Property Prediction</a>
-      <span class="paper-meta">arXiv, 2020 · first author, with Gabriel Grand and Bharath Ramsundar</span>
-      <span class="paper-description">An early open chemical language model for predicting molecular properties.</span>
+      <span class="paper-meta">NeurIPS ML4Molecules, 2020 · first author</span>
+      <span class="paper-description">One of the first open molecular language models to learn from chemical structures and predict their properties.</span>
     </li>
   </ul>
 </section>
 
 <section id="background" class="content-section" aria-labelledby="background-heading">
   <h2 id="background-heading">Background</h2>
-  <p>I came to biology through computational chemistry and open-source work on <a href="https://deepchem.io/">DeepChem</a> and <a href="https://arxiv.org/abs/2010.09885">ChemBERTa</a>, alongside early research with <a href="https://www.matter.toronto.edu/">Alan Aspuru-Guzik</a> in Toronto. At <a href="https://www.berkeley.edu/">Berkeley</a>, I studied computer science and bioengineering and worked in <a href="https://doudnalab.org/">Jennifer Doudna’s lab</a> on RNA and protein design. I also spent time at Microsoft Research and, later, Brian Hie’s Laboratory of Evolutionary Design.</p>
+  <p>I came to biology through computational chemistry and open-source work on <a href="https://deepchem.io/">DeepChem</a> and <a href="https://arxiv.org/abs/2010.09885">ChemBERTa</a>, alongside early research with <a href="https://www.matter.toronto.edu/">Alan Aspuru-Guzik</a> in Toronto. At <a href="https://www.berkeley.edu/">Berkeley</a>, I studied computer science and bioengineering and worked in <a href="https://doudnalab.org/">Jennifer Doudna’s lab</a> on RNA and protein design. At Microsoft Research, I worked with Kevin Yang on models connecting odor molecules, receptors, and perception. At Dyno Therapeutics, I worked on structure-guided sequence models to navigate epistatic fitness landscapes for gene therapy vectors.</p>
   <p>I helped lead the research committee at <a href="https://ml.berkeley.edu/">Machine Learning at Berkeley</a> and co-organized the BioML seminar series. I enjoy helping younger researchers find their footing, and talking with people who bring different ways of thinking to biology.</p>
 </section>
 
