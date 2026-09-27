@@ -9,14 +9,14 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student studying m
   <h1>Seyone Chithrananda</h1>
   <p class="pronunciation">/say-on/</p>
   <p class="intro-line">I’m a second-year PhD student in Bioengineering at <a href="https://bioengineering.stanford.edu/people/seyone-chithrananda">Stanford</a>, co-advised by <a href="https://www.fischbachgroup.org/">Michael Fischbach</a> and <a href="https://evodesign.org/">Brian Hie</a>.</p>
-  <p>I’m interested in the signals that determine what the immune system notices, ignores, and remembers about microbes. I use computation to find promising biology, then look for ways to test and design around it.</p>
+  <p>Viruses, bacteria, and parasites are a rich source of evolutionary innovation. Their proteins can be natural perturbagens—molecules that change how host cells behave. I’m interested in discovering what these factors do, how they interact with hosts, and what they reveal about immunity.</p>
 </header>
 
 <section id="research" class="content-section" aria-labelledby="research-heading">
   <h2 id="research-heading">Research</h2>
   <p>My work is taking shape around three connected questions:</p>
   <ol class="research-list">
-    <li><strong>Discover.</strong> Which microbial factors change immune behavior? I’m interested in model-guided discovery at the host–microbe and host–pathogen interface.</li>
+    <li><strong>Discover.</strong> Which microbial factors reshape immunity, and how do they interact with their hosts? I’m interested in model-guided discovery across pathogens and commensals.</li>
     <li><strong>Design.</strong> Can we engineer proteins that help commensal bacteria become better vaccines?</li>
     <li><strong>Measure.</strong> How can we screen for immune tolerance and immunodominance—what the immune system overlooks, and what it responds to most strongly?</li>
   </ol>
