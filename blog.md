@@ -1,27 +1,17 @@
 ---
 layout: default
-title: Blog
+title: Writing
+summary: Notes by Seyone Chithrananda on science, biotechnology, and ideas around them.
 ---
-<header>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/blog.html" class="active">Blog</a></li>
-            <li><a href="/assets/seyone_CV_01_25.pdf">CV</a></li>
-        </ul>
-    </nav>
-</header>
 
-<h1> Posts </h1>
-
+<p class="section-index">Notes / Archive</p>
+<h1>Writing<em>.</em></h1>
+<p>Occasional notes on science, biotechnology, and ideas around them. These pieces are from earlier chapters; I hope to add more soon.</p>
 <ul class="posts">
-    {% for post in site.posts %}
-        <li>
-        {% if post.external_url %}
-            <a href="{{ post.external_url }}">{{ post.title }} ↗</a> (published at {{post.external_host}}) <span id="post-date">({{ post.date | date: "%-m/%-d/%y" }})</span>
-        {% else %}
-            <a href="{{ post.url }}">{{ post.title }}</a> <span id="post-date">({{ post.date | date: "%-m/%-d/%y" }})</span>
-        {% endif %}    
-        </li>
-    {% endfor %}
+  {% for post in site.posts %}
+  <li>
+    <a href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url }}{% endif %}">{{ post.title }} <span aria-hidden="true">↗</span></a>
+    <span class="post-date">{{ post.date | date: "%B %Y" }}{% if post.external_host %} · {{ post.external_host }}{% endif %}</span>
+  </li>
+  {% endfor %}
 </ul>
