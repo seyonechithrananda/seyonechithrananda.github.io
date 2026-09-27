@@ -31,7 +31,8 @@ img { max-width: 100%; height: auto; }
 
 .intro { max-width: 780px; padding-top: 74px; margin-bottom: 68px; }
 .intro-upper--with-portrait { display: grid; grid-template-columns: minmax(0, 1fr) 170px; align-items: start; gap: 28px; }
-.intro-portrait { display: block; width: 170px; aspect-ratio: 4 / 5; object-fit: cover; }
+.intro-portrait-frame { width: 170px; height: 212px; overflow: hidden; }
+.intro-portrait { display: block; width: 170px; height: auto; max-width: none; transform-origin: top left; transform: translate(-96px, -170px) scale(2.6); }
 h1, h2, h3 { font-weight: normal; line-height: 1.2; }
 h1 { font-size: clamp(38px, 5vw, 52px); letter-spacing: -.03em; margin: 0; }
 .pronunciation { font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: var(--muted); margin: 2px 0 25px; }
@@ -80,7 +81,7 @@ p { margin: 0 0 18px; }
   .intro { padding-top: 46px; margin-bottom: 52px; }
   .page-content { padding-top: 38px; }
   .intro-upper--with-portrait { grid-template-columns: 1fr; }
-  .intro-portrait { width: min(170px, 45vw); }
+  .intro-portrait-frame { width: 170px; }
   .intro-line { font-size: 17px; }
   .focus-line { margin-top: 32px; }
   .content-section { margin-bottom: 43px; }

@@ -12,7 +12,7 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student working on
       <p class="pronunciation">(say-on)</p>
       <p class="intro-line">I’m a PhD student in Bioengineering at <a href="https://bioengineering.stanford.edu/people/seyone-chithrananda">Stanford</a> (since 2025), co-advised by <a href="https://www.fischbachgroup.org/">Michael Fischbach</a> and <a href="https://evodesign.org/">Brian Hie</a>.</p>
     </div>
-    {% if site.portrait %}<img class="intro-portrait" src="{{ site.portrait | relative_url }}" alt="Portrait of Seyone Chithrananda">{% endif %}
+    {% if site.portrait %}<div class="intro-portrait-frame"><img class="intro-portrait" src="{{ site.portrait | relative_url }}" alt="Seyone Chithrananda smiling at Berkeley’s Sather Gate" width="4000" height="6000"></div>{% endif %}
   </div>
   <p class="focus-line">I work on machine learning for metagenomic discovery, building tools to discover and engineer molecular function.</p>
   <p class="focus-context">Most recently, I’ve been mining microbial genomes for immunomodulatory factors.</p>
