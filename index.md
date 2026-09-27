@@ -2,7 +2,7 @@
 layout: default
 homepage: true
 title: Home
-summary: Seyone Chithrananda is a Stanford Bioengineering PhD student mining microbial and viral genomes for immune-modulating molecules and building tools for molecular discovery and design.
+summary: Seyone Chithrananda is a Stanford Bioengineering PhD student working on machine learning for metagenomic discovery and tools to discover and engineer molecular function.
 ---
 
 <header class="intro">
@@ -14,8 +14,8 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student mining mic
     </div>
     {% if site.portrait %}<img class="intro-portrait" src="{{ site.portrait | relative_url }}" alt="Portrait of Seyone Chithrananda">{% endif %}
   </div>
-  <p class="focus-line">I mine microbial and viral genomes for molecules that modulate immunity.</p>
-  <p class="focus-context">More broadly, I build tools to discover and engineer molecular function.</p>
+  <p class="focus-line">I work on machine learning for metagenomic discovery, building tools to discover and engineer molecular function.</p>
+  <p class="focus-context">Most recently, I’ve been mining microbial genomes for immunomodulatory factors.</p>
 </header>
 
 <section id="research" class="content-section" aria-labelledby="research-heading">
