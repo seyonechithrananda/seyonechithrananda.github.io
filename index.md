@@ -47,12 +47,12 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student working on
     <li>
       <a class="paper-title" href="https://doi.org/10.64898/2026.08.27.741102">Forecasting viral evolution from phylogenetic trees</a>
       <span class="paper-meta">bioRxiv, 2026</span>
-      <span class="paper-description">Learning from evolutionary histories to anticipate future viral mutations.</span>
+      <span class="paper-description">Using viral family trees to forecast mutations, including ones that emerged years later.</span>
     </li>
     <li>
       <a class="paper-title" href="https://doi.org/10.1016/j.cels.2026.101711">Mapping the combinatorial coding between olfactory receptors and perception with deep learning</a>
       <span class="paper-meta">Cell Systems, 2026</span>
-      <span class="paper-description">A model connecting odor molecules to their receptors and the smells we perceive.</span>
+      <span class="paper-description">Predicting which odor molecules activate which receptors, and how those patterns relate to perceived smell.</span>
     </li>
     <li>
       <a class="paper-title" href="https://doi.org/10.1039/D5DD00348B">ChemBERTa-3: an open source training framework for chemical foundation models</a>
