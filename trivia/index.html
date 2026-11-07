@@ -203,7 +203,7 @@ h1,h2,h3{font-family:var(--display); font-weight:400; text-wrap:balance; margin:
 <body>
 <div id="app"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.4/dist/peerjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mqtt@5.10.1/dist/mqtt.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 <script>
 (function(){
@@ -297,9 +297,10 @@ if(urlCode) mode = "buzzer";
 else if(h==="host"||h==="buzzer") mode = h;
 else mode = store.get("dbt-mode");
 
-/* ---------------- Room (PeerJS, room codes) ---------------- */
+/* ---------------- Room (MQTT relay, room codes) ---------------- */
 let room = null, roomCode = null, roomState = "connecting", myPeer = null, hostSince = Date.now();
-const PREFIX = "seyonec-diwali-";
+const TOPIC_PREFIX = "seyonec-diwali/v1/";
+const BROKERS = ["wss://broker.emqx.io:8084/mqtt", "wss://broker.hivemq.com:8884/mqtt"];
 function newCode(){ const A = "ABCDEFGHJKMNPQRSTUVWXYZ"; let s = ""; for(let i=0;i<4;i++) s += A[Math.floor(Math.random()*A.length)]; return s; }
 let hostCode = store.get("dbt-code");
 if(!/^[A-Z]{4}$/.test(hostCode||"")){ hostCode = newCode(); store.set("dbt-code", hostCode); }
@@ -307,92 +308,139 @@ const joinUrl = () => location.origin + location.pathname + "?room=" + hostCode;
 const joinUrlShort = () => (location.host + location.pathname).replace(/\/$/,"");
 
 function mergeInto(obj, patch){ for(const k in patch){ if(patch[k]===null) delete obj[k]; else obj[k] = patch[k]; } }
+function randId(n){ const A = "abcdefghijkmnopqrstuvwxyz23456789"; let s = ""; for(let i=0;i<n;i++) s += A[Math.floor(Math.random()*A.length)]; return s; }
+function parseMsg(payload){
+  try { const s = payload == null ? "" : payload.toString(); if(!s) return { empty:true }; const d = JSON.parse(s); return (d && typeof d==="object" && !Array.isArray(d)) ? { data:d } : null; }
+  catch(e){ return null; }
+}
+
+/* Connects to the first broker that answers, same order on every device.
+   Moves on only if a client never connects within ~8s; once connected it stays and auto-reconnects. */
+function mqttLink(opts){
+  let client = null, idx = 0, dead = false, everConnected = false, failT = null;
+  function attempt(){
+    if(dead) return;
+    const url = BROKERS[idx % BROKERS.length];
+    const o = { clientId: "dbt_" + randId(12), clean:true, connectTimeout:8000, reconnectPeriod:2000, keepalive:30 };
+    if(opts.will) o.will = opts.will;
+    let c;
+    try { c = mqtt.connect(url, o); } catch(e){ idx++; clearTimeout(failT); failT = setTimeout(attempt, 1000); return; }
+    client = c;
+    clearTimeout(failT);
+    failT = setTimeout(() => {
+      if(dead || everConnected || client!==c) return;
+      try { c.end(true); } catch(e){}
+      idx++; attempt();
+    }, 8500);
+    c.on("connect", () => { if(client!==c || dead) return; everConnected = true; clearTimeout(failT); opts.onConnect(c); });
+    c.on("message", (topic, payload) => { if(client!==c || dead) return; opts.onMessage(topic, payload); });
+    const down = () => { if(client!==c || dead) return; opts.onDown(); };
+    c.on("close", down); c.on("offline", down);
+    c.on("error", () => {});
+  }
+  attempt();
+  return {
+    publish(topic, msg, o){ try { if(client && client.connected) client.publish(topic, msg, o || { qos:0, retain:false }); } catch(e){} },
+    connected(){ return !!(client && client.connected); },
+    end(beforeEnd){ dead = true; clearTimeout(failT); const c = client; if(!c) return; try { if(beforeEnd && c.connected) beforeEnd(c); } catch(e){} try { c.end(false); } catch(e){} }
+  };
+}
 
 function startRoom(code){
   if(room){ room.destroy(); room = null; }
   roomCode = code || null;
   if(!code){ roomState = "connecting"; return; }
-  if(typeof window.Peer !== "function"){ roomState = "off"; refreshRoomUI(); return; }
+  if(typeof window.mqtt?.connect !== "function"){ roomState = "off"; refreshRoomUI(); return; }
   room = mode==="host" ? hostRoom(code) : phoneRoom(code);
   room.onPeers(onPeers);
 }
 
 function hostRoom(code){
-  let peer = null, dead = false, handler = null, retry = null;
-  const mine = {}, conns = new Map();
-  const snap = id => { const c = conns.get(id); return { peer:id, isMe:false, sameTab:false, presence: c ? c.presence : {} }; };
-  const all = () => [{ peer:"host", isMe:true, sameTab:true, presence:mine }].concat([...conns.keys()].map(snap));
+  const base = TOPIC_PREFIX + code + "/";
+  let handler = null, sweep = null;
+  const mine = {}, phones = new Map();
+  const snap = id => { const c = phones.get(id); return { peer:id, isMe:false, sameTab:false, presence: c ? c.presence : {} }; };
+  const all = () => [{ peer:"host", isMe:true, sameTab:true, presence:mine }].concat([...phones.keys()].map(snap));
   const fire = (j,u,l) => { if(handler) handler({ peers:all(), joined:j||[], updated:u||[], left:l||[] }); };
-  function open(){
-    if(dead) return;
-    roomState = "connecting"; refreshRoomUI();
-    peer = new Peer(PREFIX+code, { debug:0 });
-    peer.on("open", () => { roomState = "on"; refreshRoomUI(); });
-    peer.on("connection", conn => {
-      conn.on("open", () => { conns.set(conn.peer, { conn, presence:{} }); try { conn.send(mine); } catch(e){} fire([snap(conn.peer)]); });
-      conn.on("data", d => {
-        const c = conns.get(conn.peer); if(!c || !d || typeof d!=="object") return;
-        const n = Object.assign({}, c.presence); mergeInto(n, d); c.presence = n;
-        fire([], [snap(conn.peer)]);
-      });
-      const gone = () => { if(conns.has(conn.peer)){ const s = snap(conn.peer); conns.delete(conn.peer); fire([], [], [s]); } };
-      conn.on("close", gone); conn.on("error", gone);
-    });
-    peer.on("disconnected", () => { if(!dead){ try { peer.reconnect(); } catch(e){} } });
-    peer.on("error", e => {
-      if(dead) return;
-      if(["unavailable-id","network","server-error","socket-error","socket-closed"].includes(e.type)){
-        roomState = "connecting"; refreshRoomUI();
-        clearTimeout(retry); retry = setTimeout(() => { try { peer.destroy(); } catch(x){} open(); }, 3000);
-      }
-    });
-  }
-  open();
+  const drop = id => { if(!phones.has(id)) return; const s = snap(id); phones.delete(id); fire([], [], [s]); };
+  const sendMine = () => { if(Object.keys(mine).length) link.publish(base+"host", JSON.stringify(mine), { qos:0, retain:true }); };
+  roomState = "connecting"; refreshRoomUI();
+  const link = mqttLink({
+    will: { topic: base+"host", payload: "", qos:0, retain:true },
+    onConnect(c){
+      c.subscribe([base+"p/+", base+"bye/+"], { qos:0 });
+      roomState = "on"; refreshRoomUI();
+      sendMine();
+      link.publish(base+"ping", "1", { qos:0, retain:false });
+    },
+    onDown(){ if(roomState!=="connecting"){ roomState = "connecting"; refreshRoomUI(); } },
+    onMessage(topic, payload){
+      if(topic.indexOf(base)!==0) return;
+      const rest = topic.slice(base.length), slash = rest.indexOf("/");
+      if(slash<0) return;
+      const kind = rest.slice(0, slash), id = rest.slice(slash+1);
+      if(!id || id.indexOf("/")>=0) return;
+      if(kind==="bye"){ drop(id); return; }
+      if(kind!=="p") return;
+      const m = parseMsg(payload); if(!m) return;
+      if(m.empty){ drop(id); return; }
+      const ex = phones.get(id);
+      // Phones always send their full presence object, so it replaces the old one.
+      const n = {}; mergeInto(n, m.data);
+      if(ex){ ex.presence = n; ex.lastSeen = Date.now(); fire([], [snap(id)]); }
+      else { phones.set(id, { presence:n, lastSeen:Date.now() }); fire([snap(id)]); }
+    }
+  });
+  sweep = setInterval(() => {
+    const now = Date.now();
+    for(const [id, c] of [...phones.entries()]) if(now - c.lastSeen > 40000) drop(id);
+  }, 5000);
   return {
-    presence(patch){ mergeInto(mine, patch); for(const c of conns.values()){ try { if(c.conn.open) c.conn.send(mine); } catch(e){} } return Promise.resolve(); },
+    presence(patch){ mergeInto(mine, patch); sendMine(); return Promise.resolve(); },
     onPeers(fn){ handler = fn; return () => { handler = null; }; },
     peers: all,
-    destroy(){ dead = true; clearTimeout(retry); try { peer.destroy(); } catch(e){} }
+    destroy(){ clearInterval(sweep); handler = null; link.end(c => c.publish(base+"host", "", { qos:0, retain:true })); }
   };
 }
 
 function phoneRoom(code){
-  let peer = null, conn = null, dead = false, hostP = null, handler = null, retry = null;
+  const base = TOPIC_PREFIX + code + "/";
+  const id = randId(10);
+  myPeer = id;
+  let handler = null, hostP = null, gotHost = false, noHostT = null, beat = null, dead = false;
   const mine = {};
-  const all = () => { const a = [{ peer: myPeer || "me", isMe:true, sameTab:true, presence:mine }]; if(hostP) a.push({ peer:"host", isMe:false, sameTab:false, presence:hostP }); return a; };
+  const all = () => { const a = [{ peer:id, isMe:true, sameTab:true, presence:mine }]; if(hostP) a.push({ peer:"host", isMe:false, sameTab:false, presence:hostP }); return a; };
   const fire = () => { if(handler) handler({ peers:all(), joined:[], updated:[], left:[] }); };
-  const later = (fn, ms) => { clearTimeout(retry); retry = setTimeout(fn, ms); };
-  function connect(){
-    if(dead || !peer || peer.destroyed) return;
-    if(peer.disconnected){ try { peer.reconnect(); } catch(e){} later(connect, 2000); return; }
-    try { if(conn) conn.close(); } catch(e){}
-    const c = conn = peer.connect(PREFIX+code, { reliable:true });
-    c.on("open", () => { if(c!==conn) return; clearTimeout(retry); roomState = "on"; try { c.send(mine); } catch(e){} refreshRoomUI(); });
-    c.on("data", d => { if(c!==conn || !d || typeof d!=="object") return; hostP = d; fire(); });
-    const lost = () => { if(c!==conn || dead) return; hostP = null; roomState = "connecting"; fire(); refreshRoomUI(); later(connect, 2000); };
-    c.on("close", lost); c.on("error", lost);
-    later(() => { if(c===conn && !c.open) connect(); }, 9000);
-  }
-  function start(){
-    if(dead) return;
-    roomState = "connecting";
-    peer = new Peer({ debug:0 });
-    peer.on("open", id => { myPeer = id; connect(); });
-    peer.on("disconnected", () => { if(!dead){ try { peer.reconnect(); } catch(e){} } });
-    peer.on("error", e => {
-      if(dead) return;
-      if(e.type==="peer-unavailable"){ roomState = "nohost"; hostP = null; fire(); refreshRoomUI(); later(connect, 3000); }
-      else if(["network","server-error","socket-error","socket-closed","disconnected"].includes(e.type)){
-        roomState = "connecting"; refreshRoomUI(); later(() => { try { peer.destroy(); } catch(x){} start(); }, 3000);
+  const sendMine = () => link.publish(base+"p/"+id, JSON.stringify(mine), { qos:0, retain:false });
+  roomState = "connecting";
+  const link = mqttLink({
+    will: { topic: base+"bye/"+id, payload: "1", qos:0, retain:false },
+    onConnect(c){
+      c.subscribe([base+"host", base+"ping"], { qos:0 });
+      sendMine();
+      if(gotHost){ roomState = "on"; refreshRoomUI(); }
+      else {
+        clearTimeout(noHostT);
+        noHostT = setTimeout(() => { if(!dead && !gotHost && link.connected()){ roomState = "nohost"; refreshRoomUI(); } }, 6000);
       }
-    });
-  }
-  start();
+    },
+    onDown(){ clearTimeout(noHostT); if(roomState!=="connecting"){ roomState = "connecting"; refreshRoomUI(); } },
+    onMessage(topic, payload){
+      if(topic===base+"ping"){ sendMine(); return; }
+      if(topic!==base+"host") return;
+      const m = parseMsg(payload); if(!m) return;
+      if(m.empty){ hostP = null; fire(); return; }
+      hostP = m.data; gotHost = true; clearTimeout(noHostT);
+      if(roomState!=="on"){ roomState = "on"; refreshRoomUI(); }
+      fire();
+    }
+  });
+  beat = setInterval(sendMine, 15000);
   return {
-    presence(patch){ mergeInto(mine, patch); try { if(conn && conn.open) conn.send(mine); } catch(e){} return Promise.resolve(); },
+    presence(patch){ mergeInto(mine, patch); sendMine(); return Promise.resolve(); },
     onPeers(fn){ handler = fn; return () => { handler = null; }; },
     peers: all,
-    destroy(){ dead = true; clearTimeout(retry); try { peer.destroy(); } catch(e){} }
+    destroy(){ dead = true; clearInterval(beat); clearTimeout(noHostT); handler = null; link.end(c => c.publish(base+"bye/"+id, "1", { qos:0, retain:false })); }
   };
 }
 
@@ -733,7 +781,7 @@ function renderPhone(force){
   } else if(roomState==="nohost" && !HOST){
     main = '<p class="ph-msg">No game found for room '+esc(P.code)+'</p><p class="ph-sub">Check the code on the big screen. I’ll keep trying.</p><button class="btn" data-act="ph-change">Change room code</button>';
   } else if(!HOST){
-    main = '<p class="ph-msg">Connecting to room '+esc(P.code)+'…</p><p class="ph-sub">Being on the same Wi-Fi as the projector helps.</p>';
+    main = '<p class="ph-msg">Connecting to room '+esc(P.code)+'…</p><p class="ph-sub">Make sure you have internet.</p>';
   } else {
     const ph = HOST.phase;
     if(ph==="lobby"){
