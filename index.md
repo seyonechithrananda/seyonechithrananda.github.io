@@ -44,6 +44,11 @@ summary: Seyone Chithrananda is a Stanford Bioengineering PhD student working on
   <p class="section-note">A few projects that shaped how I think. <a href="https://scholar.google.com/citations?user=ElZ0iNkAAAAJ">Full list on Google Scholar ↗</a></p>
   <ul class="publication-list">
     <li>
+      <a class="paper-title" href="https://doi.org/10.64898/2026.10.28.762617">An atlas of the aging glycoproteome reveals how glycosylation modulates autoantibody binding in the brain</a>
+      <span class="paper-meta">bioRxiv, 2026</span>
+      <span class="paper-description">Mapping how sugars attached to proteins change across the mouse lifespan and testing how they affect autoantibody binding in the brain.</span>
+    </li>
+    <li>
       <a class="paper-title" href="https://doi.org/10.64898/2026.08.27.741102">Forecasting viral evolution from phylogenetic trees</a>
       <span class="paper-meta">bioRxiv, 2026</span>
       <span class="paper-description">Using viral family trees to forecast mutations, including ones that emerged years later.</span>
